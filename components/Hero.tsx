@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       className="relative -mt-21.5 flex h-screen w-full
         bg-[linear-gradient(160deg,#3D2B1F_0%,#6B4C35_40%,#8B6B4A_100%)]
-        before:absolute before:inset-0 before:bg-[url('/home/hero.jpg')]
+        before:absolute before:inset-0 before:bg-[url('/images/home/hero.jpg')]
         before:bg-cover before:bg-center before:opacity-[0.55] after:absolute
         after:inset-0
         after:bg-[linear-gradient(to_top,rgba(30,20,12,0.85)_0%,rgba(30,20,12,0.1)_60%)]
