@@ -25,7 +25,7 @@ export default function Intro() {
           volcanic stone — materials that age with the land, not against it.
         </p>
         <span
-          className="cursor-pointer border-b-1 border-earth pb-1 text-[11px]
+          className="cursor-pointer border-b border-earth pb-1 text-[11px]
             tracking-[0.2em] text-earth-deep uppercase"
         >
           Read our story
