@@ -86,13 +86,7 @@ export default function Rooms() {
       </div>
       <div className="grid grid-cols-3 gap-0.5">
         {rooms.map((room, index) => (
-          <RoomCard
-            key={index}
-            src={room.src}
-            price={room.price}
-            title={room.title}
-            description={room.description}
-          />
+          <RoomCard key={index} {...room} />
         ))}
       </div>
     </div>
