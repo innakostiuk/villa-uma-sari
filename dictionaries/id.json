@@ -1,0 +1,370 @@
+{
+  "shared": {
+    "nav": {
+      "villas": "Vila",
+      "experiences": "Pengalaman",
+      "about": "Tentang Kami",
+      "reserve": "Reservasi"
+    },
+    "footer": {
+      "tagline": "Dua belas vila pribadi di atas Sungai Ayung, Ubud.",
+      "privacy": "Privasi",
+      "contact": "Kontak",
+      "instagram": "Instagram",
+      "copyright": "© 2025 Uma Sari Bali"
+    },
+    "cta": {
+      "viewVilla": "Lihat Vila",
+      "reserveNow": "Reservasi Sekarang",
+      "learnMore": "Pelajari Lebih Lanjut",
+      "enquire": "Tanya Kami",
+      "bookTreatment": "Pesan Perawatan",
+      "backToHome": "Kembali ke Beranda",
+      "sendInquiry": "Kirim Pertanyaan",
+      "perNight": "per malam",
+      "from": "mulai dari",
+      "startingFrom": "Mulai dari"
+    }
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Uma Sari — Ubud Bali",
+        "description": "Dua belas vila pribadi yang tersembunyi di antara terasering sawah kuno Ubud."
+      },
+      "hero": {
+        "eyebrow": "Ubud · Bali · Indonesia",
+        "title": "Tempat hutan bernapas di sekeliling Anda",
+        "subtitle": "Dua belas vila pribadi yang tersembunyi di antara terasering sawah kuno Ubud. Tempat untuk tiba perlahan, dan pulang dengan perasaan yang berbeda."
+      },
+      "intro": {
+        "label": "Filosofi Kami",
+        "title": "Kemewahan yang menyatu dengan alam",
+        "body": [
+          "Uma Sari dibangun dengan satu keyakinan: bahwa kemewahan sejati itu tidak mencolok. Tanpa lobi yang megah. Tanpa kepura-puraan. Hanya dua belas vila yang terbuka bagi hutan, di mana satu-satunya agenda adalah kenyamanan Anda sendiri.",
+          "Setiap vila dirancang oleh arsitek lokal menggunakan kayu jati bekas dan batu vulkanik — material yang menua bersama tanah, bukan melawannya."
+        ],
+        "cta": "Baca kisah kami"
+      },
+      "quote": {
+        "text": "Kami tiba sebagai turis. Kami pulang dengan perasaan yang lebih dekat dengan diri kami sendiri.",
+        "attribution": "Sarah & James, London · Menginap 10 malam"
+      }
+    },
+    "villas": {
+      "meta": {
+        "title": "Uma Sari — Vila",
+        "description": "Dua belas vila pribadi di atas lembah Sungai Ayung di Ubud, Bali."
+      },
+      "hero": {
+        "eyebrow": "Akomodasi",
+        "title": "Dua belas vila, satu hutan"
+      },
+      "filters": {
+        "label": "Saring berdasarkan",
+        "all": "Semua Vila",
+        "one": "1 Kamar Tidur",
+        "two": "2 Kamar Tidur",
+        "three": "3 Kamar Tidur",
+        "pool": "Vila Kolam Renang"
+      },
+      "items": [
+        {
+          "slug": "the-sanctuary",
+          "name": "The Sanctuary",
+          "tagline": "Titik tertinggi Uma Sari, di mana lembah terbuka di bawah Anda",
+          "priceFrom": 890,
+          "bedrooms": 3,
+          "maxGuests": 6,
+          "sqm": 380,
+          "description": [
+            "The Sanctuary berada di titik tertinggi Uma Sari, di mana lembah Sungai Ayung terbentang di bawah kaki Anda dan hutan menjulang di segala sisi. Ini adalah vila terbesar kami — tiga kamar tidur, kolam renang infinity 20 meter, dan paviliun ruang tamu terbuka yang meniadakan batas antara bagian dalam dan luar ruangan.",
+            "Dibangun oleh arsitek Bali I Wayan Suweca menggunakan kayu jati bekas dari joglo berusia 200 tahun, setiap sudut di sini memiliki cerita. Lantainya terbuat dari batu vulkanik. Atapnya dari alang-alang yang disusun dengan tangan. Kolam renangnya tampak mengalir langsung ke lembah di bawahnya.",
+            "Tamu The Sanctuary mendapatkan pelayan pribadi (butler) khusus selama menginap, sarapan di dalam vila setiap hari, dan akses prioritas untuk semua pengalaman di Uma Sari."
+          ],
+          "amenities": [
+            "Infinity Pool 20m",
+            "Butler Pribadi",
+            "Rain Shower Luar Ruangan",
+            "Sarapan Harian",
+            "Paviliun Terbuka",
+            "Makan di Dalam Vila",
+            "Teras Pemandangan Lembah",
+            "Area Yoga"
+          ],
+          "tags": [
+            "Kolam Pribadi",
+            "Layanan Butler",
+            "Pemandangan Lembah",
+            "Bak Mandi Luar Ruangan"
+          ],
+          "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80"
+        },
+        {
+          "slug": "the-terrace-suite",
+          "name": "The Terrace Suite",
+          "tagline": "Bangun dengan pemandangan sawah yang membentang ke cakrawala",
+          "priceFrom": 520,
+          "bedrooms": 2,
+          "maxGuests": 4,
+          "sqm": 200,
+          "description": [
+            "The Terrace Suite menghadap langsung ke arah timur, menuju terasering sawah kuno yang telah digarap di lereng bukit ini selama delapan abad. Di pagi hari, saat kabut terangkat dan sawah menangkap cahaya pertama, ini adalah pemandangan terindah di seluruh properti kami.",
+            "Dua kamar tidur, kolam rendam (plunge pool) pribadi, dan teras taman yang memperluas ruang tamu ke dalam lanskap alam."
+          ],
+          "amenities": [
+            "Plunge Pool Pribadi",
+            "Pemandangan Sawah",
+            "Teras Taman",
+            "Sarapan Harian",
+            "Shower Luar Ruangan",
+            "Makan di Dalam Vila"
+          ],
+          "tags": ["Kolam Pribadi", "Pemandangan Sawah", "Taman"],
+          "heroImage": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80"
+        },
+        {
+          "slug": "the-forest-villa",
+          "name": "The Forest Villa",
+          "tagline": "Tersembunyi di balik rimbunnya pepohonan, dirancang untuk privasi penuh",
+          "priceFrom": 340,
+          "bedrooms": 1,
+          "maxGuests": 2,
+          "sqm": 120,
+          "description": [
+            "The Forest Villa sepenuhnya dikelilingi oleh hutan. Dari dek kolam renang, Anda tidak akan melihat apa pun kecuali pepohonan — tidak ada vila lain, tidak ada jalan, tidak ada cakrawala. Ini adalah ruang yang paling pribadi di properti kami.",
+            "Dirancang untuk pasangan, vila ini memiliki satu kamar tidur utama (king), kamar mandi semi-terbuka yang menghadap ke hutan, dan kolam renang yang letaknya sejajar dengan rimbunnya vegetasi sekitar."
+          ],
+          "amenities": [
+            "Kolam Pribadi",
+            "Pemandangan Hutan",
+            "Kamar Mandi Semi-Terbuka",
+            "Sarapan Harian",
+            "Shower Luar Ruangan",
+            "Kamar Tidur Utama (King)"
+          ],
+          "tags": ["Kolam Pribadi", "Pemandangan Hutan", "Pasangan"],
+          "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80"
+        },
+        {
+          "slug": "the-pavilion",
+          "name": "The Pavilion",
+          "tagline": "Gaya hidup ruang terbuka, dikelilingi oleh taman",
+          "priceFrom": 440,
+          "bedrooms": 2,
+          "maxGuests": 4,
+          "sqm": 180,
+          "description": [
+            "The Pavilion mengambil nama dari ruang tamu utamanya — sebuah ruangan terbuka tanpa dinding, hanya atap jerami dan taman di segala sisi. Di musim kemarau, batas antara hidup di dalam dan luar ruangan menghilang sepenuhnya.",
+            "Dua kamar tidur, kolam renang taman, dan dapur yang tersedia untuk kelas memasak di dalam vila."
+          ],
+          "amenities": [
+            "Kolam Taman",
+            "Paviliun Terbuka",
+            "Dapur Pribadi",
+            "Sarapan Harian",
+            "Pemandangan Taman",
+            "Akses Kelas Memasak"
+          ],
+          "tags": ["Kolam Taman", "Paviliun Terbuka", "2 Kamar Tidur"],
+          "heroImage": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&q=80"
+        },
+        {
+          "slug": "the-canopy-house",
+          "name": "The Canopy House",
+          "tagline": "Menggantung di atas lantai hutan, sejajar dengan pucuk pepohonan",
+          "priceFrom": 610,
+          "bedrooms": 2,
+          "maxGuests": 4,
+          "sqm": 240,
+          "description": [
+            "The Canopy House dibangun di atas platform tinggi yang menempatkan Anda sejajar dengan puncak pohon — dek kolam renangnya berada delapan meter di atas lantai hutan, di antara dahan-dahan, bukan di bawahnya.",
+            "Dua kamar tidur, kolam renang di atas pepohonan, dan dek observasi yang merupakan tempat terbaik di properti untuk menikmati matahari terbenam."
+          ],
+          "amenities": [
+            "Kolam Treetop",
+            "Dek Observasi",
+            "Pemandangan Kanopi Hutan",
+            "Sarapan Harian",
+            "Shower Luar Ruangan",
+            "Dek Matahari Terbenam"
+          ],
+          "tags": ["Kolam Treetop", "Kanopi Hutan", "Pemandangan Sunset"],
+          "heroImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&q=80"
+        }
+      ]
+    },
+    "experiences": {
+      "meta": {
+        "title": "Uma Sari — Pengalaman",
+        "description": "18 pengalaman pribadi pilihan di dalam dan sekitar Ubud, Bali."
+      },
+      "hero": {
+        "eyebrow": "Lebih dari sekadar vila",
+        "title": "Hidup adalah rencana perjalanannya",
+        "subtitle": "Kami tidak percaya pada kesenangan yang dijadwalkan secara kaku. Setiap pengalaman di Uma Sari dimulai dengan apa yang sebenarnya Anda inginkan — dan kami membangunnya di sekitar itu."
+      },
+      "stats": [
+        {
+          "number": "18",
+          "label": "Pengalaman pilihan, dari jalan pagi di sawah saat subuh hingga kelas memasak pribadi saat senja"
+        },
+        {
+          "number": "12",
+          "label": "Pemandu lokal dan pengrajin yang telah bekerja bersama Uma Sari sejak kami dibuka"
+        },
+        {
+          "number": "0",
+          "label": "Tur rombongan. Setiap pengalaman diatur secara pribadi, hanya untuk rombongan Anda"
+        }
+      ],
+      "items": [
+        {
+          "slug": "jungle-spa-at-dawn",
+          "category": "Kesehatan",
+          "name": "Jungle Spa Saat Fajar",
+          "description": "Mulailah sebelum seluruh dunia terbangun. Paviliun spa terbuka kami, yang terletak di atas lembah sungai, menawarkan pijat tradisional Bali dan perawatan herbal saat kabut mulai terangkat dari hutan di bawahnya.",
+          "duration": "90 mnt · Mulai jam 6 pagi",
+          "price": "mulai dari $85 per orang"
+        },
+        {
+          "slug": "market-and-kitchen",
+          "category": "Kuliner",
+          "name": "Pasar & Dapur",
+          "description": "Kunjungi pasar pagi Ubud bersama koki kami, lalu masak jamuan khas Bali tiga menu di dapur terbuka kami.",
+          "duration": "4 jam · Pagi hari",
+          "price": "mulai dari $120 per orang"
+        },
+        {
+          "slug": "sacred-temple-walk",
+          "category": "Budaya",
+          "name": "Jelajah Pura Suci",
+          "description": "Tur jalan kaki pribadi ke pura-pura tertua di Ubud dengan pemandu lokal sebagai pembimbing Anda.",
+          "duration": "3 jam · Fleksibel",
+          "price": "mulai dari $60 per orang"
+        },
+        {
+          "slug": "sunrise-surf-canggu",
+          "category": "Petualangan",
+          "name": "Selancar Matahari Terbit, Canggu",
+          "description": "Sopir kami akan menjemput Anda jam 5 pagi. Anda akan berada di air di Berawa pada jam 6:15 dengan instruktur pribadi, sebelum keramaian datang. Kembali untuk sarapan pada jam 9.",
+          "duration": "Sepanjang pagi · Termasuk antar-jemput",
+          "price": "mulai dari $140 per orang"
+        }
+      ]
+    },
+    "about": {
+      "meta": {
+        "title": "Uma Sari — Tentang Kami",
+        "description": "Kisah Uma Sari — dibangun perlahan, dengan sengaja, di atas Sungai Ayung di Ubud."
+      },
+      "hero": {
+        "eyebrow": "Kisah Kami",
+        "title": "Dibangun perlahan, dengan sengaja"
+      },
+      "story": {
+        "label": "Permulaan",
+        "title": "Sepetak hutan, dua belas tahun pengerjaan",
+        "body": [
+          "Uma Sari berawal dari sebidang tanah di atas Sungai Ayung yang tidak diinginkan siapa pun. Lerengnya terlalu curam, akses jalannya belum beraspal, hutannya terlalu tebal. Pada tahun 2012, pendiri kami Adi Wijaya melihat sesuatu yang lain: satu hektar lahan paling pribadi di Ubud.",
+          "Yang menyusul kemudian adalah dua belas tahun pembangunan yang lambat dan terencana. Tanpa investor. Tanpa waralaba. Tanpa terburu-buru. Setiap vila diselesaikan sebelum vila berikutnya dimulai. Setiap material bersumber dari lokal — batu vulkanik dari Tabanan, jati bekas dari rumah-rumah joglo yang dibongkar di Jawa Tengah, rumput alang-alang dari bukit-bukit di sekitarnya.",
+          "Uma Sari dibuka dengan tenang pada tahun 2024 dengan empat vila. Kami menambah empat lagi pada tahun 2025. Empat vila terakhir akan diselesaikan pada akhir tahun ini."
+        ]
+      },
+      "values": {
+        "label": "Cara Kami Berpikir",
+        "title": "Tiga hal yang tidak akan kami kompromikan",
+        "items": [
+          {
+            "number": "01",
+            "name": "Privasi di atas segalanya",
+            "description": "Tidak ada kolam renang bersama. Tidak ada sarapan prasmanan. Tidak ada aktivitas kelompok. Setiap pengalaman di Uma Sari dirancang secara pribadi, bukan karena tambahan biaya."
+          },
+          {
+            "number": "02",
+            "name": "Selalu lokal",
+            "description": "Setiap orang yang bekerja di sini tinggal dalam radius 30 menit dari properti ini. Setiap bahan di dapur kami bersumber dari Bali."
+          },
+          {
+            "number": "03",
+            "name": "Lambat sebagai pilihan",
+            "description": "Kami tidak akan pernah memiliki lebih dari dua belas vila. Pertumbuhan demi angka semata bukanlah hal yang kami minati."
+          }
+        ]
+      },
+      "sustainability": {
+        "label": "Keberlanjutan",
+        "title": "Meninggalkan hutan lebih baik dari saat kami menemukannya",
+        "body": "Setiap keputusan di Uma Sari melewati satu filter: apakah ini membuat lahan menjadi lebih baik atau lebih buruk? Kami telah memasang tenaga surya untuk seluruh dua belas vila, mengolah semua limbah dapur menjadi kompos sejak hari pertama, dan menanam 400 pohon di lahan sekitar.",
+        "stats": [
+          {
+            "number": "100%",
+            "description": "Bertenaga surya. Nol listrik dari jaringan PLN sejak 2024."
+          },
+          {
+            "number": "400+",
+            "description": "Pohon ditanam di lahan sekitar sejak pembukaan."
+          },
+          {
+            "number": "0",
+            "description": "Plastik sekali pakai di seluruh area properti."
+          },
+          {
+            "number": "30km",
+            "description": "Radius maksimal sumber untuk semua makanan dan material."
+          }
+        ]
+      }
+    },
+    "reserve": {
+      "meta": {
+        "title": "Uma Sari — Reservasi",
+        "description": "Mulailah kunjungan Anda di Uma Sari. Kirimkan pertanyaan dan kami akan membalas dalam 24 jam."
+      },
+      "hero": {
+        "eyebrow": "Uma Sari · Ubud, Bali",
+        "title": "Mulai kunjungan Anda di sini",
+        "subtitle": "Beri tahu kami apa yang Anda cari. Kami akan mengonfirmasi ketersediaan dan membalas Anda dalam waktu 24 jam — secara pribadi, bukan dengan balasan otomatis."
+      },
+      "form": {
+        "title": "Pertanyaan Anda",
+        "subtitle": "Tidak diperlukan pembayaran pada tahap ini. Kami akan memeriksa ketersediaan dan mengirimi Anda konfirmasi pribadi.",
+        "sections": {
+          "yourDetails": "Data Diri Anda",
+          "yourStay": "Kunjungan Anda",
+          "extras": "Tambahan & Permintaan Khusus"
+        },
+        "fields": {
+          "firstName": "Nama Depan",
+          "lastName": "Nama Belakang",
+          "email": "Alamat Email",
+          "phone": "Telepon (opsional)",
+          "arrival": "Tanggal Kedatangan",
+          "departure": "Tanggal Keberangkatan",
+          "villa": "Vila Pilihan",
+          "villaPlaceholder": "Saya terbuka untuk saran",
+          "adults": "Dewasa",
+          "children": "Anak-anak",
+          "message": "Hal lain yang perlu kami ketahui",
+          "messagePlaceholder": "Beri tahu kami apa pun yang dapat membantu kami mempersiapkan kedatangan Anda..."
+        },
+        "checkboxes": {
+          "transfer": "Antar-jemput bandara (gratis untuk The Sanctuary)",
+          "spa": "Pemesanan Jungle Spa di hari kedatangan",
+          "occasion": "Acara khusus (ulang tahun pernikahan, bulan madu, ulang tahun)",
+          "dietary": "Kebutuhan diet khusus atau alergi"
+        },
+        "submit": "Kirim Pertanyaan",
+        "note": "Kami membalas dalam 24 jam. Biasanya jauh lebih cepat.",
+        "trust": {
+          "noPayment": "Tanpa pembayaran sekarang. Konfirmasi ketersediaan dulu.",
+          "cancellation": "Pembatalan gratis hingga 14 hari sebelum kedatangan."
+        }
+      },
+      "success": {
+        "title": "Pertanyaan diterima",
+        "body": "Terima kasih. Salah satu tim kami akan menghubungi Anda dalam waktu 24 jam untuk mengonfirmasi ketersediaan dan menjawab pertanyaan apa pun."
+      }
+    }
+  }
+}

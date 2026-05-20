@@ -1,0 +1,370 @@
+{
+  "shared": {
+    "nav": {
+      "villas": "Villas",
+      "experiences": "Experiences",
+      "about": "About",
+      "reserve": "Reserve"
+    },
+    "footer": {
+      "tagline": "Twelve private villas above the Ayung River, Ubud.",
+      "privacy": "Privacy",
+      "contact": "Contact",
+      "instagram": "Instagram",
+      "copyright": "© 2025 Uma Sari Bali"
+    },
+    "cta": {
+      "viewVilla": "View Villa",
+      "reserveNow": "Reserve Now",
+      "learnMore": "Learn More",
+      "enquire": "Enquire",
+      "bookTreatment": "Book a Treatment",
+      "backToHome": "Back to Home",
+      "sendInquiry": "Send Inquiry",
+      "perNight": "per night",
+      "from": "from",
+      "startingFrom": "Starting from"
+    }
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Uma Sari — Ubud Bali",
+        "description": "Twelve private villas hidden among Ubud's ancient rice terraces."
+      },
+      "hero": {
+        "eyebrow": "Ubud · Bali · Indonesia",
+        "title": "Where the jungle breathes around you",
+        "subtitle": "Twelve private villas hidden among Ubud's ancient rice terraces. A place to arrive slowly, and leave differently."
+      },
+      "intro": {
+        "label": "Our Philosophy",
+        "title": "Luxury that leaves no trace",
+        "body": [
+          "Uma Sari was built with one belief: that true luxury is invisible. No grand lobbies. No performance. Just twelve villas, open to the jungle, where the only agenda is your own.",
+          "Each villa was designed by local architects using reclaimed teak and volcanic stone — materials that age with the land, not against it."
+        ],
+        "cta": "Read our story"
+      },
+      "quote": {
+        "text": "We arrived as tourists. We left as something closer to ourselves.",
+        "attribution": "Sarah & James, London · Stayed 10 nights"
+      }
+    },
+    "villas": {
+      "meta": {
+        "title": "Uma Sari — Villas",
+        "description": "Twelve private villas above the Ayung River valley in Ubud, Bali."
+      },
+      "hero": {
+        "eyebrow": "Accommodations",
+        "title": "Twelve villas,\none jungle"
+      },
+      "filters": {
+        "label": "Filter by",
+        "all": "All Villas",
+        "one": "1 Bedroom",
+        "two": "2 Bedrooms",
+        "three": "3 Bedrooms",
+        "pool": "Pool Villa"
+      },
+      "items": [
+        {
+          "slug": "the-sanctuary",
+          "name": "The Sanctuary",
+          "tagline": "The highest point of Uma Sari, where the valley opens beneath you",
+          "priceFrom": 890,
+          "bedrooms": 3,
+          "maxGuests": 6,
+          "sqm": 380,
+          "description": [
+            "The Sanctuary sits at the highest point of Uma Sari, where the Ayung River valley opens beneath you and the jungle rises on all sides. It is our largest villa — three bedrooms, a 20-metre infinity pool, and an open-air living pavilion that makes the distinction between inside and outside irrelevant.",
+            "Built by Balinese architect I Wayan Suweca using reclaimed teak from a 200-year-old joglo, every surface here has a story. The stone floors are volcanic. The roof is hand-laid alang-alang grass. The pool appears to pour directly into the valley below.",
+            "Guests of The Sanctuary receive a dedicated private butler for the duration of their stay, in-villa breakfast served daily, and priority access to all Uma Sari experiences."
+          ],
+          "amenities": [
+            "20m Infinity Pool",
+            "Private Butler",
+            "Outdoor Rain Shower",
+            "Daily Breakfast",
+            "Open-air Pavilion",
+            "In-villa Dining",
+            "Valley View Terrace",
+            "Yoga Deck"
+          ],
+          "tags": [
+            "Private Pool",
+            "Butler Service",
+            "Valley View",
+            "Outdoor Bath"
+          ],
+          "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80"
+        },
+        {
+          "slug": "the-terrace-suite",
+          "name": "The Terrace Suite",
+          "tagline": "Wake to rice fields stretching to the horizon",
+          "priceFrom": 520,
+          "bedrooms": 2,
+          "maxGuests": 4,
+          "sqm": 200,
+          "description": [
+            "The Terrace Suite faces directly east, toward the ancient rice terraces that have been cultivated on this hillside for eight centuries. In the early morning, when the mist lifts and the fields catch the first light, it is the most beautiful view on the property.",
+            "Two bedrooms, a private plunge pool, and a garden terrace that extends the living space into the landscape."
+          ],
+          "amenities": [
+            "Private Plunge Pool",
+            "Rice Terrace View",
+            "Garden Terrace",
+            "Daily Breakfast",
+            "Outdoor Shower",
+            "In-villa Dining"
+          ],
+          "tags": ["Private Pool", "Rice Terrace View", "Garden"],
+          "heroImage": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80"
+        },
+        {
+          "slug": "the-forest-villa",
+          "name": "The Forest Villa",
+          "tagline": "Hidden deep in the canopy, private by design",
+          "priceFrom": 340,
+          "bedrooms": 1,
+          "maxGuests": 2,
+          "sqm": 120,
+          "description": [
+            "The Forest Villa is entirely enclosed by jungle. From the pool deck, you can see nothing but trees — no other villas, no road, no horizon. It is the most private space on the property.",
+            "Designed for couples, it has a single king bedroom, an indoor-outdoor bathroom open to the forest, and a pool that sits flush with the surrounding vegetation."
+          ],
+          "amenities": [
+            "Private Pool",
+            "Forest View",
+            "Indoor-Outdoor Bathroom",
+            "Daily Breakfast",
+            "Outdoor Shower",
+            "King Bedroom"
+          ],
+          "tags": ["Private Pool", "Forest View", "Couples"],
+          "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80"
+        },
+        {
+          "slug": "the-pavilion",
+          "name": "The Pavilion",
+          "tagline": "An open-air way of living, surrounded by the garden",
+          "priceFrom": 440,
+          "bedrooms": 2,
+          "maxGuests": 4,
+          "sqm": 180,
+          "description": [
+            "The Pavilion takes its name from its central living space — a completely open-air room with no walls, just a thatched roof and the garden on all sides. In the dry season, the line between living inside and outside disappears entirely.",
+            "Two bedrooms, a garden pool, and a kitchen available for in-villa cooking classes."
+          ],
+          "amenities": [
+            "Garden Pool",
+            "Open Pavilion",
+            "Private Kitchen",
+            "Daily Breakfast",
+            "Garden View",
+            "Cooking Class Access"
+          ],
+          "tags": ["Garden Pool", "Open Pavilion", "2 Bedrooms"],
+          "heroImage": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&q=80"
+        },
+        {
+          "slug": "the-canopy-house",
+          "name": "The Canopy House",
+          "tagline": "Suspended above the jungle floor, level with the treetops",
+          "priceFrom": 610,
+          "bedrooms": 2,
+          "maxGuests": 4,
+          "sqm": 240,
+          "description": [
+            "The Canopy House is built on a raised platform that puts you at treetop level — the pool deck sits eight metres above the jungle floor, among the branches rather than beneath them.",
+            "Two bedrooms, a treetop pool, and an observation deck that is the best place on the property to watch the sunset."
+          ],
+          "amenities": [
+            "Treetop Pool",
+            "Observation Deck",
+            "Jungle Canopy View",
+            "Daily Breakfast",
+            "Outdoor Shower",
+            "Sunset Deck"
+          ],
+          "tags": ["Treetop Pool", "Jungle Canopy", "Sunset View"],
+          "heroImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&q=80"
+        }
+      ]
+    },
+    "experiences": {
+      "meta": {
+        "title": "Uma Sari — Experiences",
+        "description": "18 curated private experiences in and around Ubud, Bali."
+      },
+      "hero": {
+        "eyebrow": "Beyond the villa",
+        "title": "Life is the itinerary",
+        "subtitle": "We don't believe in scheduled fun. Every experience at Uma Sari begins with what you actually want — and we build around that."
+      },
+      "stats": [
+        {
+          "number": "18",
+          "label": "Curated experiences, from rice terrace walks at dawn to private cooking classes at dusk"
+        },
+        {
+          "number": "12",
+          "label": "Local guides and artisans who have worked with Uma Sari since we opened"
+        },
+        {
+          "number": "0",
+          "label": "Group tours. Every experience is arranged privately, for your party alone"
+        }
+      ],
+      "items": [
+        {
+          "slug": "jungle-spa-at-dawn",
+          "category": "Wellness",
+          "name": "Jungle Spa at Dawn",
+          "description": "Begin before the rest of the world wakes. Our open-air spa pavilion, set above the river valley, offers traditional Balinese massage and herbal treatments as the mist lifts from the jungle below.",
+          "duration": "90 min · From 6am",
+          "price": "from $85 per person"
+        },
+        {
+          "slug": "market-and-kitchen",
+          "category": "Culinary",
+          "name": "Market & Kitchen",
+          "description": "Visit Ubud's morning market with our chef, then cook a three-course Balinese feast in our open kitchen.",
+          "duration": "4 hrs · Morning",
+          "price": "from $120 per person"
+        },
+        {
+          "slug": "sacred-temple-walk",
+          "category": "Culture",
+          "name": "Sacred Temple Walk",
+          "description": "A private walking tour of Ubud's oldest temples with a local priest as your guide.",
+          "duration": "3 hrs · Flexible",
+          "price": "from $60 per person"
+        },
+        {
+          "slug": "sunrise-surf-canggu",
+          "category": "Adventure",
+          "name": "Sunrise Surf, Canggu",
+          "description": "Our driver picks you up at 5am. You're in the water at Berawa by 6:15, with a private instructor, before the crowds arrive. Back for breakfast by 9.",
+          "duration": "Full morning · Transfers included",
+          "price": "from $140 per person"
+        }
+      ]
+    },
+    "about": {
+      "meta": {
+        "title": "Uma Sari — About",
+        "description": "The story of Uma Sari — built slow, on purpose, above the Ayung River in Ubud."
+      },
+      "hero": {
+        "eyebrow": "Our Story",
+        "title": "Built slow, on purpose"
+      },
+      "story": {
+        "label": "The Beginning",
+        "title": "A plot of jungle, twelve years of work",
+        "body": [
+          "Uma Sari started as a piece of land above the Ayung River that nobody wanted. The slope was too steep, the access road unpaved, the jungle too thick. In 2012, founder Adi Wijaya saw something else: the most private acre in Ubud.",
+          "What followed was twelve years of slow, deliberate building. No investors. No franchise. No rush. Each villa was completed before the next was started. Each material was sourced locally — volcanic stone from Tabanan, teak reclaimed from dismantled joglo homes in Central Java, alang-alang grass from the hillsides nearby.",
+          "Uma Sari opened quietly in 2024 with four villas. We added four more in 2025. The final four will be completed by the end of this year."
+        ]
+      },
+      "values": {
+        "label": "How We Think",
+        "title": "Three things we refuse to compromise",
+        "items": [
+          {
+            "number": "01",
+            "name": "Privacy above all",
+            "description": "No shared pools. No buffet breakfasts. No group activities. Every experience at Uma Sari is private by design, not by upgrade."
+          },
+          {
+            "number": "02",
+            "name": "Local always",
+            "description": "Every person who works here lives within 30 minutes of this property. Every ingredient in our kitchen is sourced from Bali."
+          },
+          {
+            "number": "03",
+            "name": "Slow by choice",
+            "description": "We will never have more than twelve villas. Growth for its own sake is not something we're interested in."
+          }
+        ]
+      },
+      "sustainability": {
+        "label": "Sustainability",
+        "title": "Leave the jungle better than we found it",
+        "body": "Every decision at Uma Sari runs through a single filter: does this leave the land better or worse? We've solar-powered all twelve villas, composted all kitchen waste since day one, and planted 400 trees on adjacent land.",
+        "stats": [
+          {
+            "number": "100%",
+            "description": "Solar powered. Zero grid electricity since 2024."
+          },
+          {
+            "number": "400+",
+            "description": "Trees planted on adjacent land since opening."
+          },
+          {
+            "number": "0",
+            "description": "Single-use plastics anywhere on the property."
+          },
+          {
+            "number": "30km",
+            "description": "Maximum sourcing radius for all food and materials."
+          }
+        ]
+      }
+    },
+    "reserve": {
+      "meta": {
+        "title": "Uma Sari — Reserve",
+        "description": "Begin your stay at Uma Sari. Send an inquiry and we'll respond within 24 hours."
+      },
+      "hero": {
+        "eyebrow": "Uma Sari · Ubud, Bali",
+        "title": "Begin your stay here",
+        "subtitle": "Tell us what you're looking for. We'll confirm availability and come back to you within 24 hours — personally, not with an automated reply."
+      },
+      "form": {
+        "title": "Your inquiry",
+        "subtitle": "No payment required at this stage. We'll check availability and send you a personalised confirmation.",
+        "sections": {
+          "yourDetails": "Your Details",
+          "yourStay": "Your Stay",
+          "extras": "Extras & Special Requests"
+        },
+        "fields": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "email": "Email Address",
+          "phone": "Phone (optional)",
+          "arrival": "Arrival Date",
+          "departure": "Departure Date",
+          "villa": "Preferred Villa",
+          "villaPlaceholder": "I'm open to suggestions",
+          "adults": "Adults",
+          "children": "Children",
+          "message": "Anything else we should know",
+          "messagePlaceholder": "Tell us anything that would help us prepare..."
+        },
+        "checkboxes": {
+          "transfer": "Airport transfer (complimentary for The Sanctuary)",
+          "spa": "Jungle Spa booking on arrival day",
+          "occasion": "Special occasion (anniversary, honeymoon, birthday)",
+          "dietary": "Dietary requirements or allergies"
+        },
+        "submit": "Send Inquiry",
+        "note": "We respond within 24 hours. Usually much sooner.",
+        "trust": {
+          "noPayment": "No payment now. Confirm availability first.",
+          "cancellation": "Free cancellation up to 14 days before arrival."
+        }
+      },
+      "success": {
+        "title": "Inquiry received",
+        "body": "Thank you. One of our team will be in touch within 24 hours to confirm availability and answer any questions."
+      }
+    }
+  }
+}
