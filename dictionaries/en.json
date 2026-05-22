@@ -58,15 +58,24 @@
       },
       "hero": {
         "eyebrow": "Accommodations",
-        "title": "Twelve villas,\none jungle"
+        "title": "Twelve villas,|one jungle"
       },
       "filters": {
         "label": "Filter by",
-        "all": "All Villas",
-        "one": "1 Bedroom",
-        "two": "2 Bedrooms",
-        "three": "3 Bedrooms",
-        "pool": "Pool Villa"
+        "options": [
+          { "value": "all", "label": "All Villas" },
+          { "value": "1", "label": "1 Bedroom" },
+          { "value": "2", "label": "2 Bedrooms" },
+          { "value": "3", "label": "3 Bedrooms" },
+          { "value": "pool", "label": "Pool Villa" }
+        ]
+      },
+      "villaCard": {
+        "bedroomLabel": "Bedroom",
+        "guestsLabel": "Guests max",
+        "priceFrom": "from",
+        "perNight": "/ night",
+        "viewVilla": "View Villa"
       },
       "items": [
         {
@@ -75,7 +84,7 @@
           "tagline": "The highest point of Uma Sari, where the valley opens beneath you",
           "priceFrom": 890,
           "bedrooms": 3,
-          "maxGuests": 6,
+          "maxGuests": 4,
           "sqm": 380,
           "description": [
             "The Sanctuary sits at the highest point of Uma Sari, where the Ayung River valley opens beneath you and the jungle rises on all sides. It is our largest villa — three bedrooms, a 20-metre infinity pool, and an open-air living pavilion that makes the distinction between inside and outside irrelevant.",
@@ -101,7 +110,7 @@
           "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80"
         },
         {
-          "slug": "the-terrace-suite",
+          "slug": "the-terrace",
           "name": "The Terrace Suite",
           "tagline": "Wake to rice fields stretching to the horizon",
           "priceFrom": 520,
@@ -124,7 +133,7 @@
           "heroImage": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80"
         },
         {
-          "slug": "the-forest-villa",
+          "slug": "the-forest",
           "name": "The Forest Villa",
           "tagline": "Hidden deep in the canopy, private by design",
           "priceFrom": 340,

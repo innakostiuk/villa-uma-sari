@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
-import ForestVillaImage from '@/public/images/home/villa-forest.jpg';
-import TerraceVillaImage from '@/public/images/home/villa-terrace.jpg';
-import SanctuaryVillaImage from '@/public/images/home/villa-sanctuary.jpg';
+import ForestVillaImage from '@/public/images/villas/the-forest.jpg';
+import TerraceVillaImage from '@/public/images/villas/the-terrace.jpg';
+import SanctuaryVillaImage from '@/public/images/villas/the-sanctuary.jpg';
 
 const rooms = [
   {
@@ -40,6 +40,7 @@ const RoomCard = ({
       <Image
         src={src}
         alt={title}
+        sizes="33vw"
         fill
         className="transform object-cover duration-500 ease-in-out
           hover:scale-104"

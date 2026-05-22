@@ -62,11 +62,20 @@
       },
       "filters": {
         "label": "Saring berdasarkan",
-        "all": "Semua Vila",
-        "one": "1 Kamar Tidur",
-        "two": "2 Kamar Tidur",
-        "three": "3 Kamar Tidur",
-        "pool": "Vila Kolam Renang"
+        "options": [
+          { "value": "all", "label": "Semua Vila" },
+          { "value": "one", "label": "1 Kamar Tidur" },
+          { "value": "two", "label": "2 Kamar Tidur" },
+          { "value": "three", "label": "3 Kamar Tidur" },
+          { "value": "pool", "label": "Vila Kolam Renang" }
+        ]
+      },
+      "villaCard": {
+        "bedroomLabel": "Kamar Tidur",
+        "guestsLabel": "Tamu",
+        "priceFrom": "Mulai Dari",
+        "perNight": "/ malam",
+        "viewVilla": "Lihat Villa"
       },
       "items": [
         {
@@ -101,7 +110,7 @@
           "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80"
         },
         {
-          "slug": "the-terrace-suite",
+          "slug": "the-terrace",
           "name": "The Terrace Suite",
           "tagline": "Bangun dengan pemandangan sawah yang membentang ke cakrawala",
           "priceFrom": 520,
@@ -124,7 +133,7 @@
           "heroImage": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80"
         },
         {
-          "slug": "the-forest-villa",
+          "slug": "the-forest",
           "name": "The Forest Villa",
           "tagline": "Tersembunyi di balik rimbunnya pepohonan, dirancang untuk privasi penuh",
           "priceFrom": 340,

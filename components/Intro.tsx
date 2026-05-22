@@ -33,9 +33,10 @@ export default function Intro() {
       </div>
       <div className="relative aspect-4/5 flex-1">
         <Image
-          src="/images/home/intro.jpg"
+          src="/images/villas/the-canopy-house.jpg"
           alt="Intro Image"
           fill
+          sizes="50vw"
           className="object-cover"
           priority
         />

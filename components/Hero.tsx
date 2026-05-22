@@ -1,3 +1,5 @@
+import { Eyebrow } from './Eyebrow';
+
 export default function Hero() {
   return (
     <section
@@ -11,9 +13,7 @@ export default function Hero() {
     >
       <div className="z-20 mt-auto flex w-full justify-between">
         <div className="px-12 pb-18">
-          <p className="mb-5 text-[11px] tracking-[0.25em] text-fog uppercase">
-            Ubud · Bali · Indonesia
-          </p>
+          <Eyebrow text="Ubud · Bali · Indonesia" />
           <h1
             className="mb-6 font-serif text-[72px] leading-none font-light
               text-white"
