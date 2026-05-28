@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond, Jost } from 'next/font/google';
 import { LANGUAGES } from '@/lib/constans';
 import { ReactNode } from 'react';
-import { PageParams } from '@/types';
+import { LanguageId, PageParams } from '@/types';
 import '@/app/globals.css';
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
@@ -29,10 +29,13 @@ export async function generateStaticParams() {
   return LANGUAGES.map(({ id }) => ({ lang: id }));
 }
 
-type StaticProps = PageParams & { children: ReactNode };
+type StaticProps = {
+  children: ReactNode;
+  params: Promise<{ lang: string }>; // match what Next actually passes
+};
 
 export default async function RootLayout({ children, params }: StaticProps) {
-  const { lang } = await params;
+  const { lang } = (await params) as { lang: LanguageId };
   return (
     <html
       lang={lang}
