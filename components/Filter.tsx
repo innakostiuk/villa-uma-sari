@@ -27,8 +27,8 @@ export const Filter = ({ label, options }: FilterProps) => {
           <button
             key={option.value}
             className={twMerge(
-              `cursor-pointer border border-sand-dark bg-transparent px-4.5
-              py-1.5 font-sans text-[11px] tracking-widest text-ink transition
+              `font-jost cursor-pointer border border-sand-dark bg-transparent
+              px-4.5 py-1.5 text-[11px] tracking-widest text-ink transition
               duration-200 hover:border-earth-deep hover:bg-earth-deep
               hover:text-white`,
               active === option.value &&

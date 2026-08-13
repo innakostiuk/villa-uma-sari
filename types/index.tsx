@@ -6,12 +6,12 @@ export type PageParams = {
   }>;
 };
 
-// export type PageParamsWithSlug = {
-//   params: Promise<{
-//     lang: LanguageId;
-//     slug: string;
-//   }>;
-// };
+export type PageParamsWithSlug = {
+  params: Promise<{
+    lang: LanguageId;
+    slug: string;
+  }>;
+};
 
 export type Villa = {
   slug: string;

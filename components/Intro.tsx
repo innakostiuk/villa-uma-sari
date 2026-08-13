@@ -8,7 +8,7 @@ export default function Intro() {
           Our Philosophy
         </p>
         <h2
-          className="mb-7 font-serif text-[48px] leading-[1.15] font-light
+          className="font-comporant mb-7 text-[48px] leading-[1.15] font-light
             text-ink"
         >
           Luxury that

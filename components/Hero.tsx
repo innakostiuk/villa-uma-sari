@@ -1,6 +1,7 @@
+import { LanguageId } from '@/types';
 import { Eyebrow } from './Eyebrow';
 
-export default function Hero() {
+export default function Hero({ lang }: { lang: LanguageId }) {
   return (
     <section
       className="relative -mt-21.5 flex h-screen w-full
@@ -15,7 +16,7 @@ export default function Hero() {
         <div className="px-12 pb-18">
           <Eyebrow text="Ubud · Bali · Indonesia" />
           <h1
-            className="mb-6 font-serif text-[72px] leading-none font-light
+            className="mb-6 font-comporant text-[72px] leading-none font-light
               text-white"
           >
             Where the
@@ -32,7 +33,7 @@ export default function Hero() {
             terraces. A place to arrive slowly, and leave differently.
           </p>
           <a
-            href="#"
+            href={`/${lang}/villas`}
             className="inline-block cursor-pointer border border-[#fdfaf580]/50
               bg-transparent px-9 py-3.5 text-[11px] tracking-[0.2em] text-white
               uppercase transition-[background,border-color] duration-300

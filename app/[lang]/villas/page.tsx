@@ -33,7 +33,7 @@ export default async function VillasPage({ params }: PageParams) {
         </div>
       </section>
       <Filter label={label} options={options} />
-      <Villas labels={villaCard} items={items} />
+      <Villas labels={villaCard} items={items} lang={lang} />
     </main>
   );
 }

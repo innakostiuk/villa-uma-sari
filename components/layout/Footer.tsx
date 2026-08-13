@@ -16,7 +16,7 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer className="flex items-center justify-between bg-ink p-12 text-fog">
-      <div className="font-serif text-[22px] text-white">Uma Sari</div>
+      <div className="font-comporant text-[22px] text-white">Uma Sari</div>
       <div className="flex gap-6">
         {footerLinks.map(({ url, name }, index) => (
           <a

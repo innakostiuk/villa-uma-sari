@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond, Jost } from 'next/font/google';
 import { LANGUAGES } from '@/lib/constans';
 import { ReactNode } from 'react';
-import { LanguageId, PageParams } from '@/types';
+import { LanguageId } from '@/types';
 import '@/app/globals.css';
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
@@ -31,7 +31,7 @@ export async function generateStaticParams() {
 
 type StaticProps = {
   children: ReactNode;
-  params: Promise<{ lang: string }>; // match what Next actually passes
+  params: Promise<{ lang: string }>;
 };
 
 export default async function RootLayout({ children, params }: StaticProps) {
@@ -41,8 +41,8 @@ export default async function RootLayout({ children, params }: StaticProps) {
       lang={lang}
       className={`${cormorant.variable} ${jost.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-sand font-sans">
-        <Navbar />
+      <body className="flex min-h-full flex-col bg-sand">
+        <Navbar lang={lang} />
         <main className="flex flex-1 flex-col">{children}</main>
         <Footer />
       </body>

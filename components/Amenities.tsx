@@ -47,7 +47,7 @@ export default function Amenities() {
         <p className="mb-4 text-[10px] tracking-[0.25em] text-fog uppercase">
           The Experience
         </p>
-        <h2 className="font-serif text-[44px] leading-[1.1]">
+        <h2 className="font-comporant text-[44px] leading-[1.1]">
           Everything,
           <br />
           <em className="italic">thoughtfully placed</em>

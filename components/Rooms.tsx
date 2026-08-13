@@ -63,7 +63,9 @@ const RoomCard = ({
           bg-[linear-gradient(to_top,rgba(20,14,8,0.9)_0%,transparent_100%)]
           px-6 pt-8 pb-6"
       >
-        <div className="mb-1.5 font-serif text-[22px] text-white">{title}</div>
+        <div className="font-comporant mb-1.5 text-[22px] text-white">
+          {title}
+        </div>
         <div className="font-fog text-[11px] tracking-widest text-fog">
           {description}
         </div>
@@ -82,7 +84,7 @@ export default function Rooms() {
         <h2 className="text-[44px] leading-[1.1] font-light text-ink">
           Twelve villas,
           <br />
-          <em className="font-serif italic">one jungle</em>
+          <em className="font-comporant italic">one jungle</em>
         </h2>
       </div>
       <div className="grid grid-cols-3 gap-0.5">

@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+
 :root {
   --sand: #f5f0e8;
   --sand-dark: #e8dfc8;
@@ -18,8 +19,7 @@
   --color-fog: var(--fog);
   --color-white: var(--white);
   --color-ink: var(--ink);
-
-  /* Fonts */
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Jost', sans-serif;
+  /* Map Tailwind utilities to the Next.js font variables */
+  --font-jost: var(--font-jost);
+  --font-comporant: var(--font-cormorant);
 }

@@ -1,5 +1,6 @@
 import { Dictionary } from '@/dictionaries';
 import { VILLA_IMAGES } from '@/lib/images';
+import { LanguageId } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
@@ -15,9 +16,15 @@ type VillaCardProps = {
   labels: VillaCardTranslation;
   villa: VillaItem;
   featured?: boolean;
+  lang: LanguageId;
 };
 
-const VillaCard = ({ labels, villa, featured = false }: VillaCardProps) => {
+const VillaCard = ({
+  labels,
+  villa,
+  featured = false,
+  lang,
+}: VillaCardProps) => {
   const { bedrooms, maxGuests, sqm, amenities } = villa;
   const { bedroomLabel, guestsLabel, viewVilla } = labels;
   const image = VILLA_IMAGES[villa.slug];
@@ -42,7 +49,7 @@ const VillaCard = ({ labels, villa, featured = false }: VillaCardProps) => {
         fill
         className="transform object-cover duration-500 ease-in-out
           group-hover:scale-104"
-        sizes="50vw"
+        sizes={featured ? '100vw' : '50vw'}
       />
       <div
         className="absolute flex size-full flex-col justify-between
@@ -53,14 +60,22 @@ const VillaCard = ({ labels, villa, featured = false }: VillaCardProps) => {
           className="w-fit self-end border border-[#fdfaf533] bg-[#140e0880]
             px-4 py-2 text-[12px] tracking-[0.05em] text-white"
         >
-          from {villa.priceFrom} / night
+          from ${villa.priceFrom} / night
         </div>
         <div className="px-9 pb-8">
-          <div className="mb-2 font-serif text-[32px] font-light text-white">
+          <div className="mb-2 font-comporant text-[32px] font-light text-white">
             {villa.name}
           </div>
           <div className="mb-5 text-[12px] tracking-[0.08em] text-fog">
-            {meta}
+            {meta.map((item, index) => (
+              <span
+                key={`${item}-${index}`}
+                className="after:mx-2 after:content-['·']
+                  last:after:content-none"
+              >
+                {item}
+              </span>
+            ))}
           </div>
           <div
             className="flex flex-wrap gap-2 text-[10px] tracking-[0.12em]
@@ -76,7 +91,7 @@ const VillaCard = ({ labels, villa, featured = false }: VillaCardProps) => {
             ))}
           </div>
           <Link
-            href={'/'}
+            href={`/${lang}/villas/${villa.slug}`}
             className="mt-4 inline-flex w-fit items-center gap-2 border-b
               border-[#fdfaf54d] pb-0.5 text-[10px] tracking-[0.2em] text-white
               uppercase"
@@ -92,9 +107,11 @@ const VillaCard = ({ labels, villa, featured = false }: VillaCardProps) => {
 export const Villas = ({
   labels,
   items,
+  lang,
 }: {
   labels: VillaCardTranslation;
   items: VillaItem[];
+  lang: LanguageId;
 }) => {
   return (
     <section className="px-12 py-16">
@@ -105,6 +122,7 @@ export const Villas = ({
             labels={labels}
             villa={item}
             featured={index === 0}
+            lang={lang}
           />
         ))}
       </div>

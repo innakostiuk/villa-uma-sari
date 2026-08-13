@@ -77,6 +77,25 @@
         "perNight": "/ malam",
         "viewVilla": "Lihat Villa"
       },
+      "details": {
+        "amenitiesTitle": "Fasilitas Villa",
+        "booking": {
+          "label": "Mulai dari",
+          "tagline": "per malam · minimum 2 malam",
+          "dateFromLabel": "Check-in",
+          "dateToLabel": "Check-out",
+          "guestsLabel": "Tamu",
+          "button": "Minta pemesanan",
+          "note": "Belum ada pembayaran. Kami akan konfirmasi ketersediaan dalam 24 jam.",
+          "specialRequestsLabel": "Permintaan khusus",
+          "conditions": [
+            { "cancellation": "Pembatalan gratis hingga 14 hari sebelumnya" },
+            { "breakfast": "Sarapan harian untuk semua tamu" },
+            { "shuttle": "Antar-jemput bandara pribadi sudah termasuk" },
+            { "butler": "Pelayan pribadi (butler) selama menginap" }
+          ]
+        }
+      },
       "items": [
         {
           "slug": "the-sanctuary",
@@ -99,7 +118,9 @@
             "Paviliun Terbuka",
             "Makan di Dalam Vila",
             "Teras Pemandangan Lembah",
-            "Area Yoga"
+            "Area Yoga",
+            "interior kayu jati bekas",
+            "Minibar Gratis"
           ],
           "tags": [
             "Kolam Pribadi",
