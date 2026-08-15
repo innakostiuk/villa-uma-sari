@@ -84,15 +84,23 @@
           "tagline": "per malam · minimum 2 malam",
           "dateFromLabel": "Check-in",
           "dateToLabel": "Check-out",
-          "guestsLabel": "Tamu",
+          "guests": {
+            "label": "Tamu",
+            "one": "Tamu",
+            "other": "Tamu"
+          },
+          "specialRequests": {
+            "label": "Permintaan Khusus",
+            "placeholder": "Hari jadi, kebutuhan diet..."
+          },
           "button": "Minta pemesanan",
           "note": "Belum ada pembayaran. Kami akan konfirmasi ketersediaan dalam 24 jam.",
           "specialRequestsLabel": "Permintaan khusus",
-          "conditions": [
-            { "cancellation": "Pembatalan gratis hingga 14 hari sebelumnya" },
-            { "breakfast": "Sarapan harian untuk semua tamu" },
-            { "shuttle": "Antar-jemput bandara pribadi sudah termasuk" },
-            { "butler": "Pelayan pribadi (butler) selama menginap" }
+          "perks": [
+            "Pembatalan gratis hingga 14 hari sebelumnya",
+            "Sarapan harian untuk semua tamu",
+            "Antar-jemput bandara pribadi sudah termasuk",
+            "Pelayan pribadi (butler) selama menginap"
           ]
         }
       },

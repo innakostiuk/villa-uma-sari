@@ -1,5 +1,6 @@
-import { getDictionary } from '@/dictionaries';
+import { getDictionary, type Dictionary } from '@/dictionaries';
 import { PageParamsWithSlug } from '@/types';
+import { formatCurrency } from '@/lib/format';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -7,23 +8,29 @@ import { twMerge } from 'tailwind-merge';
 import { Amenity } from './Amenity';
 import { Sidebar } from './Sidebar';
 
+type VillaDetailsTranslation = Dictionary['pages']['villas'];
+
 export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
+  // 1) Route + data
   const { lang, slug } = await params;
   const translation = await getDictionary(lang);
-  const details = translation.pages.villas.details;
-  const villa = translation.pages.villas.items.find((v) => v.slug === slug);
+  const villaSection: VillaDetailsTranslation = translation.pages.villas;
+
+  const villa = villaSection.items.find((v) => v.slug === slug);
   if (!villa) {
     notFound(); // renders Next.js 404 page
   }
 
-  const heroImage = `/images/villas/${slug}.jpg`;
+  const details = villaSection.details;
+  const formattedPrice = formatCurrency(villa.priceFrom, lang);
 
+  // 2) Image config
+  const heroImage = `/images/villas/${slug}.jpg`;
   const galleryImages = [
     heroImage, // slot 1
     `/images/villas/${slug}/gallery-1.jpg`, // slot 2
     `/images/villas/${slug}/gallery-2.jpg`, // slot 3
   ];
-
   const stripImages = [
     `/images/villas/${slug}/strip-1.jpg`,
     `/images/villas/${slug}/strip-2.jpg`,
@@ -31,13 +38,13 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
     `/images/villas/${slug}/strip-4.jpg`,
   ];
 
+  // 3) Derived display data
   const eyebrow = [
     `Ubud`,
     `${villa.bedrooms} ${villa.bedrooms === 1 ? 'Bedroom' : 'Bedrooms'}`,
     `${villa.tags[0]}`,
   ];
   // → "Ubud · 3 Bedrooms · Private Pool"
-
   const meta = [
     `${villa.bedrooms} ${villa.bedrooms === 1 ? 'Bedroom' : 'Bedrooms'}`,
     `${villa.maxGuests} Guests max`,
@@ -46,11 +53,11 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
     'Valley View', // villa.tags[2] for sanctuary
   ];
 
-  const { amenitiesTitle } = translation.pages.villas.details;
   const [firstWord, secondWord = ''] = villa.name.split(/\s+/);
-  const [subtitleFirst, subtitleSecond = ''] = amenitiesTitle.split(/\s+/);
-  details.amenitiesTitle.split(/\s+/);
+  const [subtitleFirst, subtitleSecond = ''] =
+    details.amenitiesTitle.split(/\s+/);
 
+  // 4) Render
   return (
     <>
       <section>
@@ -82,7 +89,7 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
       {/* Breadcrumbs */}
       <div
         className="text- flex items-center gap-3 border-b-2 border-sand-dark
-          px-10 py-5 text-[11px] tracking-widest text-earth"
+          bg-white px-10 py-5 text-[11px] tracking-widest text-earth"
       >
         <Link href="/" className="after:mx-3 after:content-['/']">
           Home
@@ -93,9 +100,9 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
         <span>{villa.name}</span>
       </div>
       {/* Main layout */}
-      <section className="grid grid-cols-[1fr_380px]">
+      <section className="grid grid-cols-[1fr_476px] bg-white">
         {/* Detail main */}
-        <div className="px-15 py-16">
+        <div className="border-r border-sand-dark px-15 py-16">
           {/* Villa Eyebrow */}
           <p className="mb-4 text-[10px] tracking-[0.25em] text-earth uppercase">
             {eyebrow.map((item, index) => (
@@ -156,7 +163,11 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
           </div>
         </div>
         {/* Detail sidebar */}
-        <Sidebar />
+        <Sidebar
+          booking={details.booking}
+          priceFrom={formattedPrice}
+          maxGuests={villa.maxGuests}
+        />
       </section>
     </>
   );

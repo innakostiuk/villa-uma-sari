@@ -84,15 +84,23 @@
           "tagline": "per night · minimum 2 nights",
           "dateFromLabel": "Check in",
           "dateToLabel": "Check out",
-          "guestsLabel": "Guests",
+          "guests": {
+            "label": "Guests",
+            "one": "Guest",
+            "other": "Guests"
+          },
+          "specialRequests": {
+            "label": "Special Requests",
+            "placeholder": "Anniversary, dietary needs..."
+          },
           "button": "Request a booking",
           "note": "No payment now. We'll confirm availability within 24 hours.",
           "specialRequestsLabel": "Special requests",
-          "conditions": [
-            { "cancellation": "Free cancellation up to 14 days prior" },
-            { "breakfast": "Daily breakfast for all guests" },
-            { "shuttle": "Private airport transfer included" },
-            { "butler": "Dedicated butler throughout stay" }
+          "perks": [
+            "Free cancellation up to 14 days prior",
+            "Daily breakfast for all guests",
+            "Private airport transfer included",
+            "Dedicated butler throughout stay"
           ]
         }
       },
