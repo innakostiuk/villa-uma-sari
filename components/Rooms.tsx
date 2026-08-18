@@ -63,7 +63,7 @@ const RoomCard = ({
           bg-[linear-gradient(to_top,rgba(20,14,8,0.9)_0%,transparent_100%)]
           px-6 pt-8 pb-6"
       >
-        <div className="font-comporant mb-1.5 text-[22px] text-white">
+        <div className="mb-1.5 font-comporant text-[22px] text-white">
           {title}
         </div>
         <div className="font-fog text-[11px] tracking-widest text-fog">
@@ -76,18 +76,21 @@ const RoomCard = ({
 
 export default function Rooms() {
   return (
-    <div className="bg-sand px-12 py-24">
-      <div className="mb-14">
+    <div className="bg-sand px-4 py-14 lg:px-12 lg:py-24">
+      <div className="mb-10 lg:mb-14">
         <p className="mb-4 text-[10px] tracking-[0.25em] text-earth uppercase">
           Accommodations
         </p>
-        <h2 className="text-[44px] leading-[1.1] font-light text-ink">
+        <h2
+          className="text-[32px] leading-[1.1] font-light text-ink
+            lg:text-[44px]"
+        >
           Twelve villas,
           <br />
           <em className="font-comporant italic">one jungle</em>
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-0.5">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-0.5">
         {rooms.map((room, index) => (
           <RoomCard key={index} {...room} />
         ))}
