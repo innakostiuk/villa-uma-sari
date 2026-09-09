@@ -79,6 +79,7 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
                 fill
                 className="object-cover"
                 sizes={index === 0 ? '66vw' : '33vw'}
+                priority
               />
             </div>
           ))}
