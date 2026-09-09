@@ -1,9 +1,8 @@
 import { Eyebrow } from '@/components/Eyebrow';
-import { Filter } from '@/components/Filter';
 import { Title } from '@/components/Title';
 import { getDictionary } from '@/dictionaries';
 import { PageParams } from '@/types';
-import { Villas } from './Villas';
+import { VillasClient } from './VillasClient';
 
 export default async function VillasPage({ params }: PageParams) {
   const { lang } = await params;
@@ -32,8 +31,13 @@ export default async function VillasPage({ params }: PageParams) {
           </div>
         </div>
       </section>
-      <Filter label={label} options={options} />
-      <Villas labels={villaCard} items={items} lang={lang} />
+      <VillasClient
+        label={label}
+        options={options}
+        labels={villaCard}
+        items={items}
+        lang={lang}
+      />
     </main>
   );
 }
