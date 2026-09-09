@@ -53,24 +53,29 @@ export const Sidebar = ({ booking, priceFrom, maxGuests }: SideBarProps) => {
     perks,
   } = booking;
   return (
-    <aside className="sticky top-18.25 self-start px-10 py-16">
+    <aside
+      className="self-start px-4 py-8 lg:sticky lg:top-18.25 lg:px-10 lg:py-16"
+    >
       {/* Price block */}
       <div className="mb-8 border-b border-sand-dark pb-8">
         <p className="mb-2 text-[11px] tracking-[0.15em] text-earth uppercase">
           {label}
         </p>
-        <p className="font-comporant text-[48px] leading-none text-ink">
+        <p
+          className="font-comporant text-[40px] leading-none text-ink
+            md:text-[48px]"
+        >
           {priceFrom}
         </p>
         <p className="mt-1 text-[13px] text-[#6B5F52]">{tagline}</p>
       </div>
       {/* Booking form */}
       <div className="flex flex-col">
-        <div className="flex flex-row gap-0.5">
+        <div className="flex flex-col gap-0.5 sm:flex-row">
           <DateInput label={dateFromLabel} />
           <DateInput label={dateToLabel} />
         </div>
-        <div className="flex flex-col gap-1.5">
+        <div className="mt-4 flex flex-col gap-1.5">
           <Label label={guests.label} />
           <select
             className="appearance-none border border-sand-dark bg-sand px-4 py-3

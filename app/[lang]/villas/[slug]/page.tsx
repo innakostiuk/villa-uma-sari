@@ -62,19 +62,22 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
     <>
       <section>
         <div
-          className="relative -mt-21.5 grid grid-cols-[2fr_1fr]
-            grid-rows-[400px_280px] gap-0.5"
+          className="relative -mt-21.5 grid grid-cols-1 gap-0.5
+            md:grid-cols-[2fr_1fr] md:grid-rows-[400px_280px]"
         >
           {galleryImages.map((image, index) => (
             <div
               key={index}
-              className={twMerge('relative', index === 0 && 'row-span-2')}
+              className={twMerge(
+                'relative min-h-55 md:min-h-0',
+                index === 0 && 'md:row-span-2',
+              )}
             >
               <Image
                 src={image}
                 alt="gallery image"
                 fill
-                className="object-cove"
+                className="object-cover"
                 sizes={index === 0 ? '66vw' : '33vw'}
               />
             </div>
@@ -88,8 +91,9 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
       </section>
       {/* Breadcrumbs */}
       <div
-        className="text- flex items-center gap-3 border-b-2 border-sand-dark
-          bg-white px-10 py-5 text-[11px] tracking-widest text-earth"
+        className="flex flex-wrap items-center gap-2 border-b-2 border-sand-dark
+          bg-white px-4 py-4 text-[10px] tracking-widest text-earth md:gap-3
+          md:px-10 md:py-5 md:text-[11px]"
       >
         <Link href="/" className="after:mx-3 after:content-['/']">
           Home
@@ -100,9 +104,12 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
         <span>{villa.name}</span>
       </div>
       {/* Main layout */}
-      <section className="grid grid-cols-[1fr_476px] bg-white">
+      <section className="grid bg-white lg:grid-cols-[1fr_476px]">
         {/* Detail main */}
-        <div className="border-r border-sand-dark px-15 py-16">
+        <div
+          className="border-sand-dark px-4 py-8 md:px-10 lg:border-r lg:px-15
+            lg:py-16"
+        >
           {/* Villa Eyebrow */}
           <p className="mb-4 text-[10px] tracking-[0.25em] text-earth uppercase">
             {eyebrow.map((item, index) => (
@@ -116,39 +123,44 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
             ))}
           </p>
           <h1
-            className="mb-3 font-comporant text-[56px] leading-none font-light"
+            className="mb-3 font-comporant text-[40px] leading-none font-light
+              md:text-[56px]"
           >
             {firstWord}&nbsp;
             <em className="text-earth italic">{secondWord}</em>
           </h1>
-          <div className="mb-10 flex flex-wrap">
+          <div className="mb-10 flex flex-wrap gap-y-2">
             {meta.map((item, index) => (
               <span
                 key={`${item}-${index}`}
                 className="text-[12px] tracking-[0.08em] text-[#6B5F52]
-                  after:mx-6 after:content-['·'] last:after:content-none"
+                  after:mx-3 after:content-['·'] last:after:content-none
+                  md:after:mx-6"
               >
                 {item}
               </span>
             ))}
           </div>
-          <div className="mb-12 text-[16px] leading-[1.9] text-[#6B5F52]">
+          <div
+            className="mb-12 text-[15px] leading-[1.8] text-[#6B5F52]
+              md:text-[16px] md:leading-[1.9]"
+          >
             {villa.description.map((item, index) => (
               <p key={index} className="mb-5">
                 {item}
               </p>
             ))}
           </div>
-          <h2 className="mb-8 font-comporant text-[28px]">
+          <h2 className="mb-8 font-comporant text-[24px] md:text-[28px]">
             {subtitleFirst}&nbsp;
             <em className="italic">{subtitleSecond}</em>
           </h2>
-          <div className="mb-14 grid grid-cols-2 gap-0">
+          <div className="mb-14 grid gap-0 md:grid-cols-2">
             {villa.amenities.map((item, index) => (
               <Amenity key={index} amenity={item} index={index} />
             ))}
           </div>
-          <div className="mb-14 grid w-full grid-cols-4 gap-0.5">
+          <div className="mb-14 grid w-full grid-cols-2 gap-0.5 sm:grid-cols-4">
             {stripImages.map((item, index) => (
               <div key={index} className="relative aspect-square w-full">
                 <Image

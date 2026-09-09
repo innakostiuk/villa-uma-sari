@@ -18,13 +18,13 @@ export default async function VillasPage({ params }: PageParams) {
       {/* TODO: convert to Hero component */}
       <section>
         <div
-          className="relative -mt-21.5 flex h-[55vh]
+          className="relative -mt-21.5 flex h-[46vh]
             bg-[linear-gradient(160deg,#3D2B1F_0%,#6B4C35_40%,#8B6B4A_100%)]
-            px-12 py-16 before:absolute before:inset-0
+            px-4 py-10 before:absolute before:inset-0
             before:bg-[url('/images/villas/hero.jpg')] before:bg-cover
             before:bg-center before:opacity-[0.55] after:absolute after:inset-0
             after:bg-[linear-gradient(to_top,rgba(30,20,12,0.85)_0%,rgba(30,20,12,0.1)_60%)]
-            after:bg-cover after:bg-center"
+            after:bg-cover after:bg-center lg:h-[55vh] lg:px-12 lg:py-16"
         >
           <div className="z-10 mt-auto">
             <Eyebrow text={eyebrow} />

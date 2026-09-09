@@ -16,13 +16,13 @@ export const Filter = ({ label, options }: FilterProps) => {
 
   return (
     <div
-      className="flex items-center gap-8 border-b border-sand-dark bg-white
-        px-12 py-5"
+      className="flex flex-col gap-3 border-b border-sand-dark bg-white
+        px-4 py-4 lg:flex-row lg:items-center lg:gap-8 lg:px-12 lg:py-5"
     >
       <span className="text-[10px] tracking-[0.2em] text-earth uppercase">
         {label}
       </span>
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         {options.map((option) => (
           <button
             key={option.value}
