@@ -29,8 +29,10 @@ const VillaCard = ({
   const { bedroomLabel, guestsLabel, viewVilla } = labels;
   const image = VILLA_IMAGES[villa.slug];
 
+  const bedroomText = bedrooms === 1 ? bedroomLabel.one : bedroomLabel.other;
+
   const meta = [
-    `${bedrooms} ${bedrooms === 1 ? bedroomLabel : `${bedroomLabel}s`}`,
+    `${bedrooms} ${bedroomText}`,
     `${maxGuests} ${guestsLabel}`,
     `${sqm} m²`,
     amenities[0], // first amenity is always the pool type
@@ -58,15 +60,22 @@ const VillaCard = ({
       >
         <div
           className="w-fit self-end border border-[#fdfaf533] bg-[#140e0880]
-            px-3 py-1.5 text-[10px] tracking-[0.05em] text-white lg:px-4 lg:py-2 lg:text-[12px]"
+            px-3 py-1.5 text-[10px] tracking-[0.05em] text-white lg:px-4 lg:py-2
+            lg:text-[12px]"
         >
           from ${villa.priceFrom} / night
         </div>
         <div className="px-4 pb-5 lg:px-9 lg:pb-8">
-          <div className="mb-2 font-comporant text-[24px] font-light text-white lg:text-[32px]">
+          <div
+            className="mb-2 font-comporant text-[24px] font-light text-white
+              lg:text-[32px]"
+          >
             {villa.name}
           </div>
-          <div className="mb-3 text-[10px] tracking-[0.08em] text-fog lg:mb-5 lg:text-[12px]">
+          <div
+            className="mb-3 text-[10px] tracking-[0.08em] text-fog lg:mb-5
+              lg:text-[12px]"
+          >
             {meta.map((item, index) => (
               <span
                 key={`${item}-${index}`}
@@ -84,7 +93,8 @@ const VillaCard = ({
             {villa.tags.map((tag) => (
               <div
                 key={tag}
-                className="mt-2 border border-[#fdfaf540] px-2 py-1 lg:mt-4 lg:px-3"
+                className="mt-2 border border-[#fdfaf540] px-2 py-1 lg:mt-4
+                  lg:px-3"
               >
                 {tag}
               </div>

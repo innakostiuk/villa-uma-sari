@@ -1,44 +1,33 @@
-import Image, { StaticImageData } from 'next/image';
-import ForestVillaImage from '@/public/images/villas/the-forest.jpg';
-import TerraceVillaImage from '@/public/images/villas/the-terrace.jpg';
-import SanctuaryVillaImage from '@/public/images/villas/the-sanctuary.jpg';
+import Image from 'next/image';
 
-const rooms = [
-  {
-    src: ForestVillaImage,
-    price: 340,
-    title: 'The Forest Villa',
-    description: '1 bedroom · Private pool · 120 m²',
-  },
-  {
-    src: TerraceVillaImage,
-    price: 520,
-    title: 'The Terrace Suite',
-    description: '2 bedrooms · Rice field view · 200 m²',
-  },
-  {
-    src: SanctuaryVillaImage,
-    price: 890,
-    title: 'The Sanctuary',
-    description: '3 bedrooms · Infinity pool · 380 m²',
-  },
-];
+type RoomItem = {
+  title: string;
+  price: number;
+  description: string;
+  image: string;
+};
+
+type RoomsProps = {
+  label: string;
+  firstLine: string;
+  accent: string;
+  items: RoomItem[];
+  from: string;
+  perNight: string;
+};
 
 const RoomCard = ({
-  src,
+  image,
   price,
   title,
   description,
-}: {
-  src: StaticImageData;
-  price: number;
-  title: string;
-  description: string;
-}) => {
+  from,
+  perNight,
+}: RoomItem & { from: string; perNight: string }) => {
   return (
     <div className="relative aspect-3/4 cursor-pointer overflow-hidden">
       <Image
-        src={src}
+        src={image}
         alt={title}
         sizes="33vw"
         fill
@@ -55,7 +44,7 @@ const RoomCard = ({
           className="w-fit border border-[#FDFAF5]/20 bg-[#FDFAF5]/12 px-3.5
             py-2 text-[12px] tracking-[0.05em] text-white"
         >
-          from {price} / night
+          {from} {price} / {perNight}
         </div>
       </div>
       <div
@@ -74,25 +63,37 @@ const RoomCard = ({
   );
 };
 
-export default function Rooms() {
+export default function Rooms({
+  label,
+  firstLine,
+  accent,
+  items,
+  from,
+  perNight,
+}: RoomsProps) {
   return (
     <div className="bg-sand px-4 py-14 lg:px-12 lg:py-24">
       <div className="mb-10 lg:mb-14">
         <p className="mb-4 text-[10px] tracking-[0.25em] text-earth uppercase">
-          Accommodations
+          {label}
         </p>
         <h2
           className="text-[32px] leading-[1.1] font-light text-ink
             lg:text-[44px]"
         >
-          Twelve villas,
+          {firstLine}
           <br />
-          <em className="font-comporant italic">one jungle</em>
+          <em className="font-comporant italic">{accent}</em>
         </h2>
       </div>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-0.5">
-        {rooms.map((room, index) => (
-          <RoomCard key={index} {...room} />
+        {items.map((room, index) => (
+          <RoomCard
+            key={`${room.title}-${index}`}
+            {...room}
+            from={from}
+            perNight={perNight}
+          />
         ))}
       </div>
     </div>

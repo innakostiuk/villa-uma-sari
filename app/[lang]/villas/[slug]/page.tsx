@@ -39,14 +39,19 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
   ];
 
   // 3) Derived display data
+  const bedroomText =
+    villa.bedrooms === 1
+      ? translation.pages.villas.villaCard.bedroomLabel.one
+      : translation.pages.villas.villaCard.bedroomLabel.other;
+
   const eyebrow = [
     `Ubud`,
-    `${villa.bedrooms} ${villa.bedrooms === 1 ? 'Bedroom' : 'Bedrooms'}`,
+    `${villa.bedrooms} ${bedroomText}`,
     `${villa.tags[0]}`,
   ];
   // → "Ubud · 3 Bedrooms · Private Pool"
   const meta = [
-    `${villa.bedrooms} ${villa.bedrooms === 1 ? 'Bedroom' : 'Bedrooms'}`,
+    `${villa.bedrooms} ${bedroomText}`,
     `${villa.maxGuests} Guests max`,
     `${villa.sqm} m²`,
     villa.amenities[0], // or villa.tags[0]

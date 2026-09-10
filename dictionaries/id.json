@@ -34,17 +34,48 @@
       },
       "hero": {
         "eyebrow": "Ubud · Bali · Indonesia",
-        "title": "Tempat hutan bernapas di sekeliling Anda",
+        "firstLine": "Tempat hutan",
+        "accent": "bernapas di",
+        "lastLine": "sekeliling Anda",
         "subtitle": "Dua belas vila pribadi yang tersembunyi di antara terasering sawah kuno Ubud. Tempat untuk tiba perlahan, dan pulang dengan perasaan yang berbeda."
       },
       "intro": {
         "label": "Filosofi Kami",
-        "title": "Kemewahan yang menyatu dengan alam",
+        "title": "Kemewahan yang\nmenyatu ",
+        "accent": "dengan alam",
         "body": [
           "Uma Sari dibangun dengan satu keyakinan: bahwa kemewahan sejati itu tidak mencolok. Tanpa lobi yang megah. Tanpa kepura-puraan. Hanya dua belas vila yang terbuka bagi hutan, di mana satu-satunya agenda adalah kenyamanan Anda sendiri.",
           "Setiap vila dirancang oleh arsitek lokal menggunakan kayu jati bekas dan batu vulkanik — material yang menua bersama tanah, bukan melawannya."
         ],
         "cta": "Baca kisah kami"
+      },
+      "accomodation": {
+        "label": "Akomodasi",
+        "firstLine": "Dua belas vila,",
+        "accent": "di tengah hutan"
+      },
+      "amenities": {
+        "label": "Pengalaman",
+        "firstLine": "Semua,",
+        "accent": "ditata dengan penuh perhatian",
+        "items": [
+          {
+            "name": "Kolam Infinity",
+            "description": "Setiap vila memiliki kolam pribadi yang menggantung di atas lembah."
+          },
+          {
+            "name": "Spa Hutan",
+            "description": "Perawatan tradisional Bali di paviliun terbuka."
+          },
+          {
+            "name": "Dari Ladang ke Meja",
+            "description": "Koki kami mengambil semua bahan dari teras di bawah."
+          },
+          {
+            "name": "Butler Pribadi",
+            "description": "Satu host yang berdedikasi untuk seluruh masa tinggal Anda. Tanpa front desk."
+          }
+        ]
       },
       "quote": {
         "text": "Kami tiba sebagai turis. Kami pulang dengan perasaan yang lebih dekat dengan diri kami sendiri.",
@@ -58,20 +89,24 @@
       },
       "hero": {
         "eyebrow": "Akomodasi",
-        "title": "Dua belas vila, satu hutan"
+        "firstLine": "Dua belas vila,",
+        "accent": "satu hutan"
       },
       "filters": {
         "label": "Saring berdasarkan",
         "options": [
           { "value": "all", "label": "Semua Vila" },
-          { "value": "one", "label": "1 Kamar Tidur" },
-          { "value": "two", "label": "2 Kamar Tidur" },
-          { "value": "three", "label": "3 Kamar Tidur" },
+          { "value": "1", "label": "1 Kamar Tidur" },
+          { "value": "2", "label": "2 Kamar Tidur" },
+          { "value": "3", "label": "3 Kamar Tidur" },
           { "value": "pool", "label": "Vila Kolam Renang" }
         ]
       },
       "villaCard": {
-        "bedroomLabel": "Kamar Tidur",
+        "bedroomLabel": {
+          "one": "Kamar Tidur",
+          "other": "Kamar Tidur"
+        },
         "guestsLabel": "Tamu",
         "priceFrom": "Mulai Dari",
         "perNight": "/ malam",

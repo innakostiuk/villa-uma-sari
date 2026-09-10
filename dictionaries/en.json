@@ -34,17 +34,49 @@
       },
       "hero": {
         "eyebrow": "Ubud · Bali · Indonesia",
-        "title": "Where the jungle breathes around you",
+        "firstLine": "Where the",
+        "accent": "jungle breathes",
+        "lastLine": "around you",
         "subtitle": "Twelve private villas hidden among Ubud's ancient rice terraces. A place to arrive slowly, and leave differently."
       },
       "intro": {
         "label": "Our Philosophy",
-        "title": "Luxury that leaves no trace",
+        "title": "Luxury that\nleaves ",
+        "accent": "no trace",
         "body": [
           "Uma Sari was built with one belief: that true luxury is invisible. No grand lobbies. No performance. Just twelve villas, open to the jungle, where the only agenda is your own.",
           "Each villa was designed by local architects using reclaimed teak and volcanic stone — materials that age with the land, not against it."
         ],
         "cta": "Read our story"
+      },
+      "accomodation": {
+        "label": "Accommodations",
+        "firstLine": "Twelve villas,",
+        "accent": "one jungle",
+        "items": []
+      },
+      "amenities": {
+        "label": "The Experience",
+        "firstLine": "Everything,",
+        "accent": "thoughtfully placed",
+        "items": [
+          {
+            "name": "Infinity Pool",
+            "description": "Each villa has its own private pool suspended above the valley."
+          },
+          {
+            "name": "Jungle Spa",
+            "description": "Traditional Balinese treatments in open-air pavilions."
+          },
+          {
+            "name": "Farm-to-Table",
+            "description": "Our chef sources everything from the terraces below."
+          },
+          {
+            "name": "Private Butler",
+            "description": "One dedicated host for your entire stay. No front desk."
+          }
+        ]
       },
       "quote": {
         "text": "We arrived as tourists. We left as something closer to ourselves.",
@@ -58,7 +90,8 @@
       },
       "hero": {
         "eyebrow": "Accommodations",
-        "title": "Twelve villas,|one jungle"
+        "firstLine": "Twelve villas,",
+        "accent": "one jungle"
       },
       "filters": {
         "label": "Filter by",
@@ -71,7 +104,10 @@
         ]
       },
       "villaCard": {
-        "bedroomLabel": "Bedroom",
+        "bedroomLabel": {
+          "one": "Bedroom",
+          "other": "Bedrooms"
+        },
         "guestsLabel": "Guests max",
         "priceFrom": "from",
         "perNight": "/ night",
