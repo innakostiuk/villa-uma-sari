@@ -3,7 +3,7 @@ import { Dictionary } from '@/dictionaries';
 import { twMerge } from 'tailwind-merge';
 
 type FilterProps = {
-  label: string;
+  label: Dictionary['pages']['villas']['filters']['label'];
   options: Dictionary['pages']['villas']['filters']['options'];
   value: string;
   onChange: (value: string) => void;

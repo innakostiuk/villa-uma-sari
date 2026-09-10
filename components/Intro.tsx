@@ -1,12 +1,7 @@
+import type { Dictionary } from '@/dictionaries';
 import Image from 'next/image';
 
-type IntroProps = {
-  label: string;
-  title: string;
-  accent: string;
-  body: string[];
-  cta: string;
-};
+type IntroProps = Dictionary['pages']['home']['intro'];
 
 export default function Intro({ label, title, accent, body, cta }: IntroProps) {
   return (

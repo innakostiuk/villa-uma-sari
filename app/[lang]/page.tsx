@@ -29,6 +29,7 @@ export default async function Home({ params }: PageParams) {
     return {
       title: villa.name,
       price: villa.priceFrom,
+      slug: villa.slug,
       description: `${villa.bedrooms} ${bedroomText} · ${villa.tags[0]} · ${villa.sqm} m²`,
       image: `/images/villas/${villa.slug}.jpg`,
     };

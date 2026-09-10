@@ -1,8 +1,8 @@
-type HeroTitleProps = {
-  firstLine: string | undefined;
-  accent: string | undefined;
-  lastLine?: string | undefined;
-};
+import type { Dictionary } from '@/dictionaries';
+
+type HeroTitleProps = Partial<
+  Pick<Dictionary['pages']['home']['hero'], 'firstLine' | 'accent' | 'lastLine'>
+>;
 
 export const Title = ({ firstLine, accent, lastLine }: HeroTitleProps) => {
   return (

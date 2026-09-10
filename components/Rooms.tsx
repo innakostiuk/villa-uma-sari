@@ -1,6 +1,9 @@
+import type { Dictionary } from '@/dictionaries';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type RoomItem = {
+  slug: string;
   title: string;
   price: number;
   description: string;
@@ -12,20 +15,24 @@ type RoomsProps = {
   firstLine: string;
   accent: string;
   items: RoomItem[];
-  from: string;
-  perNight: string;
+  from: Dictionary['shared']['cta']['from'];
+  perNight: Dictionary['shared']['cta']['perNight'];
 };
 
 const RoomCard = ({
-  image,
-  price,
+  slug,
   title,
+  price,
   description,
+  image,
   from,
   perNight,
 }: RoomItem & { from: string; perNight: string }) => {
   return (
-    <div className="relative aspect-3/4 cursor-pointer overflow-hidden">
+    <Link
+      href={`/villas/${slug}`}
+      className="relative aspect-3/4 cursor-pointer overflow-hidden"
+    >
       <Image
         src={image}
         alt={title}
@@ -59,7 +66,7 @@ const RoomCard = ({
           {description}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
