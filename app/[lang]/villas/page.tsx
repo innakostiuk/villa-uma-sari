@@ -17,7 +17,7 @@ export default async function VillasPage({ params }: PageParams) {
         eyebrow={eyebrow}
         firstLine={firstLine}
         accent={accent}
-        backgroundClassName="before:bg-[url('/images/villas/hero.jpg')]"
+        backgroundImage="/images/villas/hero.jpg"
         className="h-[46vh] lg:h-[55vh]"
         contentClassName="px-4 py-10 lg:px-12 lg:py-16"
       />

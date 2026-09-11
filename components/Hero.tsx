@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { ReactNode } from 'react';
 import { Eyebrow } from './Eyebrow';
 import { Title } from './Title';
@@ -10,7 +11,7 @@ type HeroProps = {
   description?: string;
   ctaLabel?: string;
   ctaHref?: string;
-  backgroundClassName?: string;
+  backgroundImage?: string;
   showDiscover?: boolean;
   className?: string;
   contentClassName?: string;
@@ -25,7 +26,7 @@ export default function Hero({
   description,
   ctaLabel,
   ctaHref,
-  backgroundClassName = "before:bg-[url('/images/home/hero.jpg')]",
+  backgroundImage = '/images/home/hero.jpg',
   showDiscover = false,
   className = '',
   contentClassName = '',
@@ -33,10 +34,22 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section
-      className={`relative -mt-21.5 flex h-[80vh] w-full bg-[linear-gradient(160deg,#3D2B1F_0%,#6B4C35_40%,#8B6B4A_100%)] before:absolute before:inset-0 before:bg-cover before:bg-center before:opacity-[0.55] before:content-[''] ${backgroundClassName} after:absolute after:inset-0 after:bg-[linear-gradient(to_top,rgba(30,20,12,0.85)_0%,rgba(30,20,12,0.1)_60%)] after:bg-cover after:bg-center lg:h-screen ${className}`.trim()}
+      className={`relative -mt-21.5 flex h-[80vh] w-full overflow-hidden bg-[linear-gradient(160deg,#3D2B1F_0%,#6B4C35_40%,#8B6B4A_100%)] lg:h-screen ${className}`.trim()}
     >
+      <Image
+        src={backgroundImage}
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover opacity-55"
+      />
       <div
-        className={`z-20 mt-auto flex w-full flex-col gap-8 px-4 pb-10 lg:flex-row lg:items-end lg:justify-between lg:px-12 lg:pb-18 ${contentClassName}`.trim()}
+        className="absolute inset-0
+          bg-[linear-gradient(to_top,rgba(30,20,12,0.85)_0%,rgba(30,20,12,0.1)_60%)]"
+      />
+      <div
+        className={`relative z-20 mt-auto flex w-full flex-col gap-8 px-4 pb-10 lg:flex-row lg:items-end lg:justify-between lg:px-12 lg:pb-18 ${contentClassName}`.trim()}
       >
         <div className="max-w-105 lg:max-w-none">
           {eyebrow && <Eyebrow text={eyebrow} />}

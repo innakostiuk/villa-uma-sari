@@ -7,7 +7,7 @@
       "reserve": "Reservasi"
     },
     "footer": {
-      "tagline": "Dua belas vila pribadi di atas Sungai Ayung, Ubud.",
+      "tagline": "Lima vila pribadi di atas Sungai Ayung, Ubud.",
       "privacy": "Privasi",
       "contact": "Kontak",
       "instagram": "Instagram",
@@ -30,28 +30,28 @@
     "home": {
       "meta": {
         "title": "Uma Sari — Ubud Bali",
-        "description": "Dua belas vila pribadi yang tersembunyi di antara terasering sawah kuno Ubud."
+        "description": "Lima vila pribadi yang tersembunyi di antara terasering sawah kuno Ubud."
       },
       "hero": {
         "eyebrow": "Ubud · Bali · Indonesia",
         "firstLine": "Tempat hutan",
         "accent": "bernapas di",
         "lastLine": "sekeliling Anda",
-        "subtitle": "Dua belas vila pribadi yang tersembunyi di antara terasering sawah kuno Ubud. Tempat untuk tiba perlahan, dan pulang dengan perasaan yang berbeda."
+        "subtitle": "Lima vila pribadi yang tersembunyi di antara terasering sawah kuno Ubud. Tempat untuk tiba perlahan, dan pulang dengan perasaan yang berbeda."
       },
       "intro": {
         "label": "Filosofi Kami",
         "title": "Kemewahan yang\nmenyatu ",
         "accent": "dengan alam",
         "body": [
-          "Uma Sari dibangun dengan satu keyakinan: bahwa kemewahan sejati itu tidak mencolok. Tanpa lobi yang megah. Tanpa kepura-puraan. Hanya dua belas vila yang terbuka bagi hutan, di mana satu-satunya agenda adalah kenyamanan Anda sendiri.",
+          "Uma Sari dibangun dengan satu keyakinan: bahwa kemewahan sejati itu tidak mencolok. Tanpa lobi yang megah. Tanpa kepura-puraan. Hanya lima vila yang terbuka bagi hutan, di mana satu-satunya agenda adalah kenyamanan Anda sendiri.",
           "Setiap vila dirancang oleh arsitek lokal menggunakan kayu jati bekas dan batu vulkanik — material yang menua bersama tanah, bukan melawannya."
         ],
         "cta": "Baca kisah kami"
       },
       "accomodation": {
         "label": "Akomodasi",
-        "firstLine": "Dua belas vila,",
+        "firstLine": "Lima vila,",
         "accent": "di tengah hutan"
       },
       "amenities": {
@@ -85,11 +85,11 @@
     "villas": {
       "meta": {
         "title": "Uma Sari — Vila",
-        "description": "Dua belas vila pribadi di atas lembah Sungai Ayung di Ubud, Bali."
+        "description": "Lima vila pribadi di atas lembah Sungai Ayung di Ubud, Bali."
       },
       "hero": {
         "eyebrow": "Akomodasi",
-        "firstLine": "Dua belas vila,",
+        "firstLine": "Lima vila,",
         "accent": "satu hutan"
       },
       "filters": {
@@ -170,8 +170,7 @@
             "Layanan Butler",
             "Pemandangan Lembah",
             "Bak Mandi Luar Ruangan"
-          ],
-          "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80"
+          ]
         },
         {
           "slug": "the-terrace",
@@ -193,8 +192,7 @@
             "Shower Luar Ruangan",
             "Makan di Dalam Vila"
           ],
-          "tags": ["Kolam Pribadi", "Pemandangan Sawah", "Taman"],
-          "heroImage": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80"
+          "tags": ["Kolam Pribadi", "Pemandangan Sawah", "Taman"]
         },
         {
           "slug": "the-forest",
@@ -216,8 +214,7 @@
             "Shower Luar Ruangan",
             "Kamar Tidur Utama (King)"
           ],
-          "tags": ["Kolam Pribadi", "Pemandangan Hutan", "Pasangan"],
-          "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80"
+          "tags": ["Kolam Pribadi", "Pemandangan Hutan", "Pasangan"]
         },
         {
           "slug": "the-pavilion",
@@ -239,8 +236,7 @@
             "Pemandangan Taman",
             "Akses Kelas Memasak"
           ],
-          "tags": ["Kolam Taman", "Paviliun Terbuka", "2 Kamar Tidur"],
-          "heroImage": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&q=80"
+          "tags": ["Kolam Taman", "Paviliun Terbuka", "2 Kamar Tidur"]
         },
         {
           "slug": "the-canopy-house",
@@ -262,8 +258,7 @@
             "Shower Luar Ruangan",
             "Dek Matahari Terbenam"
           ],
-          "tags": ["Kolam Treetop", "Kanopi Hutan", "Pemandangan Sunset"],
-          "heroImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&q=80"
+          "tags": ["Kolam Treetop", "Kanopi Hutan", "Pemandangan Sunset"]
         }
       ]
     },
@@ -361,14 +356,14 @@
           {
             "number": "03",
             "name": "Lambat sebagai pilihan",
-            "description": "Kami tidak akan pernah memiliki lebih dari dua belas vila. Pertumbuhan demi angka semata bukanlah hal yang kami minati."
+            "description": "Kami tidak akan pernah memiliki lebih dari lima vila. Pertumbuhan demi angka semata bukanlah hal yang kami minati."
           }
         ]
       },
       "sustainability": {
         "label": "Keberlanjutan",
         "title": "Meninggalkan hutan lebih baik dari saat kami menemukannya",
-        "body": "Setiap keputusan di Uma Sari melewati satu filter: apakah ini membuat lahan menjadi lebih baik atau lebih buruk? Kami telah memasang tenaga surya untuk seluruh dua belas vila, mengolah semua limbah dapur menjadi kompos sejak hari pertama, dan menanam 400 pohon di lahan sekitar.",
+        "body": "Setiap keputusan di Uma Sari melewati satu filter: apakah ini membuat lahan menjadi lebih baik atau lebih buruk? Kami telah memasang tenaga surya untuk seluruh lima vila, mengolah semua limbah dapur menjadi kompos sejak hari pertama, dan menanam 400 pohon di lahan sekitar.",
         "stats": [
           {
             "number": "100%",

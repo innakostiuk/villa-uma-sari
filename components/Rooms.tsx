@@ -90,7 +90,7 @@ export default function Rooms({
         >
           {firstLine}
           <br />
-          <em className="font-comporant italic">{accent}</em>
+          <em className="font-comporant text-earth italic">{accent}</em>
         </h2>
       </div>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-0.5">

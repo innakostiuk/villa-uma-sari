@@ -7,7 +7,7 @@
       "reserve": "Reserve"
     },
     "footer": {
-      "tagline": "Twelve private villas above the Ayung River, Ubud.",
+      "tagline": "Five private villas above the Ayung River, Ubud.",
       "privacy": "Privacy",
       "contact": "Contact",
       "instagram": "Instagram",
@@ -30,28 +30,28 @@
     "home": {
       "meta": {
         "title": "Uma Sari — Ubud Bali",
-        "description": "Twelve private villas hidden among Ubud's ancient rice terraces."
+        "description": "Five private villas hidden among Ubud's ancient rice terraces."
       },
       "hero": {
         "eyebrow": "Ubud · Bali · Indonesia",
         "firstLine": "Where the",
         "accent": "jungle breathes",
         "lastLine": "around you",
-        "subtitle": "Twelve private villas hidden among Ubud's ancient rice terraces. A place to arrive slowly, and leave differently."
+        "subtitle": "Five private villas hidden among Ubud's ancient rice terraces. A place to arrive slowly, and leave differently."
       },
       "intro": {
         "label": "Our Philosophy",
         "title": "Luxury that\nleaves ",
         "accent": "no trace",
         "body": [
-          "Uma Sari was built with one belief: that true luxury is invisible. No grand lobbies. No performance. Just twelve villas, open to the jungle, where the only agenda is your own.",
+          "Uma Sari was built with one belief: that true luxury is invisible. No grand lobbies. No performance. Just five villas, open to the jungle, where the only agenda is your own.",
           "Each villa was designed by local architects using reclaimed teak and volcanic stone — materials that age with the land, not against it."
         ],
         "cta": "Read our story"
       },
       "accomodation": {
         "label": "Accommodations",
-        "firstLine": "Twelve villas,",
+        "firstLine": "Five villas,",
         "accent": "one jungle",
         "items": []
       },
@@ -86,11 +86,11 @@
     "villas": {
       "meta": {
         "title": "Uma Sari — Villas",
-        "description": "Twelve private villas above the Ayung River valley in Ubud, Bali."
+        "description": "Five private villas above the Ayung River valley in Ubud, Bali."
       },
       "hero": {
         "eyebrow": "Accommodations",
-        "firstLine": "Twelve villas,",
+        "firstLine": "Five villas,",
         "accent": "one jungle"
       },
       "filters": {
@@ -171,8 +171,7 @@
             "Butler Service",
             "Valley View",
             "Outdoor Bath"
-          ],
-          "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1200&q=80"
+          ]
         },
         {
           "slug": "the-terrace",
@@ -194,8 +193,7 @@
             "Outdoor Shower",
             "In-villa Dining"
           ],
-          "tags": ["Private Pool", "Rice Terrace View", "Garden"],
-          "heroImage": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80"
+          "tags": ["Private Pool", "Rice Terrace View", "Garden"]
         },
         {
           "slug": "the-forest",
@@ -217,8 +215,7 @@
             "Outdoor Shower",
             "King Bedroom"
           ],
-          "tags": ["Private Pool", "Forest View", "Couples"],
-          "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80"
+          "tags": ["Private Pool", "Forest View", "Couples"]
         },
         {
           "slug": "the-pavilion",
@@ -240,8 +237,7 @@
             "Garden View",
             "Cooking Class Access"
           ],
-          "tags": ["Garden Pool", "Open Pavilion", "2 Bedrooms"],
-          "heroImage": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1200&q=80"
+          "tags": ["Garden Pool", "Open Pavilion", "2 Bedrooms"]
         },
         {
           "slug": "the-canopy-house",
@@ -263,8 +259,7 @@
             "Outdoor Shower",
             "Sunset Deck"
           ],
-          "tags": ["Treetop Pool", "Jungle Canopy", "Sunset View"],
-          "heroImage": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&q=80"
+          "tags": ["Treetop Pool", "Jungle Canopy", "Sunset View"]
         }
       ]
     },
@@ -362,14 +357,14 @@
           {
             "number": "03",
             "name": "Slow by choice",
-            "description": "We will never have more than twelve villas. Growth for its own sake is not something we're interested in."
+            "description": "We will never have more than five villas. Growth for its own sake is not something we're interested in."
           }
         ]
       },
       "sustainability": {
         "label": "Sustainability",
         "title": "Leave the jungle better than we found it",
-        "body": "Every decision at Uma Sari runs through a single filter: does this leave the land better or worse? We've solar-powered all twelve villas, composted all kitchen waste since day one, and planted 400 trees on adjacent land.",
+        "body": "Every decision at Uma Sari runs through a single filter: does this leave the land better or worse? We've solar-powered all five villas, composted all kitchen waste since day one, and planted 400 trees on adjacent land.",
         "stats": [
           {
             "number": "100%",
