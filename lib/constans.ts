@@ -7,10 +7,9 @@ export const LANGUAGES = [
 
 export const DEFAULT_LANGUAGE: LanguageId = 'en';
 
-export const CURRENCY_BY_LANG: Record<
-  LanguageId,
-  { code: string; locale: string }
-> = {
-  en: { code: 'USD', locale: 'en-US' },
-  id: { code: 'IDR', locale: 'id-ID' },
+export const LOCALE_BY_LANG: Record<LanguageId, string> = {
+  en: 'en-US',
+  id: 'id-ID',
 };
+
+export const VILLA_PRICE_CURRENCY = 'USD';

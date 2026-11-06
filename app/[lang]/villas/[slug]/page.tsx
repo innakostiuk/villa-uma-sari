@@ -1,6 +1,7 @@
 import { getDictionary, type Dictionary } from '@/dictionaries';
 import { PageParamsWithSlug } from '@/types';
 import { formatCurrency } from '@/lib/format';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -9,6 +10,23 @@ import { Amenity } from './Amenity';
 import { Sidebar } from './Sidebar';
 
 type VillaDetailsTranslation = Dictionary['pages']['villas'];
+
+export async function generateMetadata({
+  params,
+}: PageParamsWithSlug): Promise<Metadata> {
+  const { lang, slug } = await params;
+  const villaSection = (await getDictionary(lang)).pages.villas;
+  const villa = villaSection.items.find((item) => item.slug === slug);
+
+  if (!villa) {
+    notFound();
+  }
+
+  return {
+    title: `${villa.name} | Uma Sari`,
+    description: villa.tagline,
+  };
+}
 
 export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
   // 1) Route + data
@@ -52,10 +70,10 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
   // → "Ubud · 3 Bedrooms · Private Pool"
   const meta = [
     `${villa.bedrooms} ${bedroomText}`,
-    `${villa.maxGuests} Guests max`,
+    `${villa.maxGuests} ${villaSection.villaCard.guestsLabel}`,
     `${villa.sqm} m²`,
-    villa.amenities[0], // or villa.tags[0]
-    'Valley View', // villa.tags[2] for sanctuary
+    villa.amenities[0],
+    villa.tags[2],
   ];
 
   const [firstWord, secondWord = ''] = villa.name.split(/\s+/);
@@ -101,11 +119,17 @@ export default async function VillaDetailsPage({ params }: PageParamsWithSlug) {
           bg-white px-4 py-4 text-[10px] tracking-widest text-earth md:gap-3
           md:px-10 md:py-5 md:text-[11px]"
       >
-        <Link href="/" className="after:mx-3 after:content-['/']">
-          Home
+        <Link
+          href={`/${lang}`}
+          className="after:mx-3 after:content-['/']"
+        >
+          {translation.shared.nav.home}
         </Link>
-        <Link href="/villas" className="after:mx-3 after:content-['/']">
-          Villas
+        <Link
+          href={`/${lang}/villas`}
+          className="after:mx-3 after:content-['/']"
+        >
+          {translation.shared.nav.villas}
         </Link>
         <span>{villa.name}</span>
       </div>

@@ -1,7 +1,16 @@
 import Hero from '@/components/Hero';
 import { getDictionary } from '@/dictionaries';
+import type { Metadata } from 'next';
 import { PageParams } from '@/types';
 import { VillasClient } from './VillasClient';
+
+export async function generateMetadata({
+  params,
+}: PageParams): Promise<Metadata> {
+  const { lang } = await params;
+  const translation = await getDictionary(lang);
+  return translation.pages.villas.meta;
+}
 
 export default async function VillasPage({ params }: PageParams) {
   const { lang } = await params;

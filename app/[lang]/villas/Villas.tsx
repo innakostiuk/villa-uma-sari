@@ -1,5 +1,6 @@
 import { Dictionary } from '@/dictionaries';
 import { VILLA_IMAGES } from '@/lib/images';
+import { formatCurrency } from '@/lib/format';
 import { LanguageId } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -26,7 +27,7 @@ const VillaCard = ({
   lang,
 }: VillaCardProps) => {
   const { bedrooms, maxGuests, sqm, amenities } = villa;
-  const { bedroomLabel, guestsLabel, viewVilla } = labels;
+  const { bedroomLabel, guestsLabel, viewVilla, priceFrom, perNight } = labels;
   const image = VILLA_IMAGES[villa.slug];
 
   const bedroomText = bedrooms === 1 ? bedroomLabel.one : bedroomLabel.other;
@@ -63,7 +64,7 @@ const VillaCard = ({
             px-3 py-1.5 text-[10px] tracking-[0.05em] text-white lg:px-4 lg:py-2
             lg:text-[12px]"
         >
-          from ${villa.priceFrom} / night
+          {priceFrom} {formatCurrency(villa.priceFrom, lang)} / {perNight}
         </div>
         <div className="px-4 pb-5 lg:px-9 lg:pb-8">
           <div

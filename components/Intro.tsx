@@ -1,9 +1,18 @@
 import type { Dictionary } from '@/dictionaries';
 import Image from 'next/image';
+import Link from 'next/link';
+import type { LanguageId } from '@/types';
 
 type IntroProps = Dictionary['pages']['home']['intro'];
 
-export default function Intro({ label, title, accent, body, cta }: IntroProps) {
+export default function Intro({
+  label,
+  title,
+  accent,
+  body,
+  cta,
+  lang,
+}: IntroProps & { lang: LanguageId }) {
   return (
     <section
       className="flex flex-col gap-8 bg-white px-4 py-12 lg:flex-row
@@ -29,12 +38,13 @@ export default function Intro({ label, title, accent, body, cta }: IntroProps) {
             {paragraph}
           </p>
         ))}
-        <span
-          className="cursor-pointer border-b border-earth pb-1 text-[11px]
+        <Link
+          href={`/${lang}/villas`}
+          className="inline-block border-b border-earth pb-1 text-[11px]
             tracking-[0.2em] text-earth-deep uppercase"
         >
           {cta}
-        </span>
+        </Link>
       </div>
       <div className="relative aspect-4/5 w-full lg:flex-1">
         <Image

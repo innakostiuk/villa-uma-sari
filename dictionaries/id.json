@@ -1,6 +1,7 @@
 {
   "shared": {
     "nav": {
+      "home": "Beranda",
       "villas": "Vila",
       "experiences": "Pengalaman",
       "about": "Tentang Kami",
@@ -11,7 +12,7 @@
       "privacy": "Privasi",
       "contact": "Kontak",
       "instagram": "Instagram",
-      "copyright": "© 2025 Uma Sari Bali"
+      "copyright": "© 2026 Uma Sari Bali"
     },
     "cta": {
       "viewVilla": "Lihat Vila",
@@ -47,7 +48,7 @@
           "Uma Sari dibangun dengan satu keyakinan: bahwa kemewahan sejati itu tidak mencolok. Tanpa lobi yang megah. Tanpa kepura-puraan. Hanya lima vila yang terbuka bagi hutan, di mana satu-satunya agenda adalah kenyamanan Anda sendiri.",
           "Setiap vila dirancang oleh arsitek lokal menggunakan kayu jati bekas dan batu vulkanik — material yang menua bersama tanah, bukan melawannya."
         ],
-        "cta": "Baca kisah kami"
+        "cta": "Jelajahi vila kami"
       },
       "accomodation": {
         "label": "Akomodasi",
@@ -130,6 +131,13 @@
           },
           "button": "Minta pemesanan",
           "note": "Belum ada pembayaran. Kami akan konfirmasi ketersediaan dalam 24 jam.",
+          "validation": {
+            "dateFromRequired": "Tanggal check-in wajib diisi.",
+            "dateToRequired": "Tanggal check-out wajib diisi.",
+            "dateRange": "Tanggal check-out harus setelah tanggal check-in.",
+            "guestsRequired": "Jumlah tamu wajib diisi.",
+            "submitted": "Permintaan Anda telah dikirim."
+          },
           "specialRequestsLabel": "Permintaan khusus",
           "perks": [
             "Pembatalan gratis hingga 14 hari sebelumnya",

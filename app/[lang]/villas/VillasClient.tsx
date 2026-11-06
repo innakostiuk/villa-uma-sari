@@ -32,7 +32,7 @@ export const VillasClient = ({
 
     if (activeFilter === 'pool') {
       return items.filter((villa) =>
-        villa.amenities.some((amenity) => /pool/i.test(amenity)),
+        villa.amenities.some((amenity) => /pool|kolam/i.test(amenity)),
       );
     }
 

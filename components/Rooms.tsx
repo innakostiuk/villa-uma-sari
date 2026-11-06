@@ -1,11 +1,12 @@
 import type { Dictionary } from '@/dictionaries';
+import { LanguageId } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
 
 type RoomItem = {
   slug: string;
   title: string;
-  price: number;
+  price: string;
   description: string;
   image: string;
 };
@@ -17,6 +18,7 @@ type RoomsProps = {
   items: RoomItem[];
   from: Dictionary['shared']['cta']['from'];
   perNight: Dictionary['shared']['cta']['perNight'];
+  lang: LanguageId;
 };
 
 const RoomCard = ({
@@ -27,10 +29,11 @@ const RoomCard = ({
   image,
   from,
   perNight,
-}: RoomItem & { from: string; perNight: string }) => {
+  lang,
+}: RoomItem & { from: string; perNight: string; lang: LanguageId }) => {
   return (
     <Link
-      href={`/villas/${slug}`}
+      href={`/${lang}/villas/${slug}`}
       className="relative aspect-3/4 cursor-pointer overflow-hidden"
     >
       <Image
@@ -77,6 +80,7 @@ export default function Rooms({
   items,
   from,
   perNight,
+  lang,
 }: RoomsProps) {
   return (
     <div className="bg-sand px-4 py-14 lg:px-12 lg:py-24">
@@ -100,6 +104,7 @@ export default function Rooms({
             {...room}
             from={from}
             perNight={perNight}
+            lang={lang}
           />
         ))}
       </div>

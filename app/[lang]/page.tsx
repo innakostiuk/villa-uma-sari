@@ -5,6 +5,7 @@ import Rooms from '@/components/Rooms';
 import Quote from '@/components/Quote';
 import { PageParams } from '@/types';
 import { getDictionary } from '@/dictionaries';
+import { formatCurrency } from '@/lib/format';
 
 export default async function Home({ params }: PageParams) {
   const { lang } = await params;
@@ -28,7 +29,7 @@ export default async function Home({ params }: PageParams) {
 
     return {
       title: villa.name,
-      price: villa.priceFrom,
+      price: formatCurrency(villa.priceFrom, lang),
       slug: villa.slug,
       description: `${villa.bedrooms} ${bedroomText} · ${villa.tags[0]} · ${villa.sqm} m²`,
       image: `/images/villas/${villa.slug}.jpg`,
@@ -45,12 +46,13 @@ export default async function Home({ params }: PageParams) {
         ctaHref={`/${lang}/villas`}
         showDiscover
       />
-      <Intro {...introduction} />
+      <Intro {...introduction} lang={lang} />
       <Rooms
         {...accomodation}
         items={roomsItems}
         from={priceFrom}
         perNight={perNight}
+        lang={lang}
       />
       <Amenities {...amenities} />
       <Quote {...quote} />

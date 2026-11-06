@@ -5,14 +5,13 @@ import { LanguageId } from '@/types';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const NAV_ITEMS = [
-  { name: 'Villas', url: '/villas' },
-  // { name: 'Experiences', url: '/experiences' },
-  // { name: 'About', url: '/about' },
-  // { name: 'Reserve', url: '/reserve' },
-];
-
-export default function Navbar({ lang }: { lang: LanguageId }) {
+export default function Navbar({
+  lang,
+  villasLabel,
+}: {
+  lang: LanguageId;
+  villasLabel: string;
+}) {
   const pathname = usePathname();
 
   const getLocalizedPath = (targetLang: LanguageId) => {
@@ -41,15 +40,9 @@ export default function Navbar({ lang }: { lang: LanguageId }) {
             leading-none tracking-[0.15em] text-[#fdfaf5cc] uppercase
             lg:text-[12px]"
         >
-          {NAV_ITEMS.map((item, index) => (
-            <Link
-              key={index}
-              href={`/${lang}${item.url}`}
-              className="hover:text-white"
-            >
-              {item.name}
-            </Link>
-          ))}
+          <Link href={`/${lang}/villas`} className="hover:text-white">
+            {villasLabel}
+          </Link>
         </div>
 
         <div

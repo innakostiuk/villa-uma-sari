@@ -87,6 +87,7 @@ export const Sidebar = ({ booking, priceFrom, maxGuests }: SideBarProps) => {
     button,
     note,
     perks,
+    validation,
   } = booking;
 
   const [formData, setFormData] = useState({
@@ -102,24 +103,24 @@ export const Sidebar = ({ booking, priceFrom, maxGuests }: SideBarProps) => {
     const nextErrors: FormErrors = {};
 
     if (!formData.dateFrom) {
-      nextErrors.dateFrom = `${dateFromLabel} is required.`;
+      nextErrors.dateFrom = validation.dateFromRequired;
     }
 
     if (!formData.dateTo) {
-      nextErrors.dateTo = `${dateToLabel} is required.`;
+      nextErrors.dateTo = validation.dateToRequired;
     }
 
     if (formData.dateFrom && formData.dateTo) {
       const start = new Date(formData.dateFrom);
       const end = new Date(formData.dateTo);
 
-      if (end < start) {
-        nextErrors.dateTo = 'Check-out date must be after arrival date.';
+      if (end <= start) {
+        nextErrors.dateTo = validation.dateRange;
       }
     }
 
     if (!formData.guests) {
-      nextErrors.guests = `${guests.label} is required.`;
+      nextErrors.guests = validation.guestsRequired;
     }
 
     setErrors(nextErrors);
@@ -233,7 +234,7 @@ export const Sidebar = ({ booking, priceFrom, maxGuests }: SideBarProps) => {
             className="mt-4 rounded-sm border border-emerald-200 bg-emerald-50
               px-3 py-2 text-center text-[12px] leading-[1.6] text-emerald-700"
           >
-            Your request has been sent.
+            {validation.submitted}
           </p>
         ) : (
           <p className="mt-4 text-center text-[12px] leading-[1.6] text-fog">

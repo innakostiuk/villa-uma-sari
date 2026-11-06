@@ -1,6 +1,7 @@
 {
   "shared": {
     "nav": {
+      "home": "Home",
       "villas": "Villas",
       "experiences": "Experiences",
       "about": "About",
@@ -11,7 +12,7 @@
       "privacy": "Privacy",
       "contact": "Contact",
       "instagram": "Instagram",
-      "copyright": "© 2025 Uma Sari Bali"
+      "copyright": "© 2026 Uma Sari Bali"
     },
     "cta": {
       "viewVilla": "View Villa",
@@ -47,7 +48,7 @@
           "Uma Sari was built with one belief: that true luxury is invisible. No grand lobbies. No performance. Just five villas, open to the jungle, where the only agenda is your own.",
           "Each villa was designed by local architects using reclaimed teak and volcanic stone — materials that age with the land, not against it."
         ],
-        "cta": "Read our story"
+        "cta": "Explore our villas"
       },
       "accomodation": {
         "label": "Accommodations",
@@ -131,6 +132,13 @@
           },
           "button": "Request a booking",
           "note": "No payment now. We'll confirm availability within 24 hours.",
+          "validation": {
+            "dateFromRequired": "Check-in date is required.",
+            "dateToRequired": "Check-out date is required.",
+            "dateRange": "Check-out date must be after arrival date.",
+            "guestsRequired": "Number of guests is required.",
+            "submitted": "Your request has been sent."
+          },
           "specialRequestsLabel": "Special requests",
           "perks": [
             "Free cancellation up to 14 days prior",

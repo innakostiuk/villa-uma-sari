@@ -1,4 +1,4 @@
-import { CURRENCY_BY_LANG } from './constans';
+import { LOCALE_BY_LANG, VILLA_PRICE_CURRENCY } from './constans';
 import type { LanguageId } from '@/types';
 
 export function formatCurrency(
@@ -6,10 +6,9 @@ export function formatCurrency(
   lang: LanguageId,
   opts?: Intl.NumberFormatOptions,
 ) {
-  const { code, locale } = CURRENCY_BY_LANG[lang] ?? CURRENCY_BY_LANG.en;
-  return new Intl.NumberFormat(locale, {
+  return new Intl.NumberFormat(LOCALE_BY_LANG[lang], {
     style: 'currency',
-    currency: code,
+    currency: VILLA_PRICE_CURRENCY,
     maximumFractionDigits: 0,
     ...opts,
   }).format(amount);

@@ -13,7 +13,7 @@
 //   },
 // ];
 
-export default function Footer() {
+export default function Footer({ copyright }: { copyright: string }) {
   return (
     <footer
       className="flex flex-col items-center justify-between gap-5 bg-ink p-8
@@ -31,9 +31,7 @@ export default function Footer() {
           </a>
         ))}
       </div> */}
-      <div className="text-center text-[11px] lg:text-left">
-        © 2026 Uma Sari Bali
-      </div>
+      <div className="text-center text-[11px] lg:text-left">{copyright}</div>
     </footer>
   );
 }
